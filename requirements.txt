@@ -1,0 +1,8 @@
+docling
+PyMuPDF
+tiktoken
+openai==0.28
+python-dotenv
+supabase
+streamlit
+psycopg2-binary

@@ -1,0 +1,1263 @@
+﻿2025-05-30T19:12:42.4684495Z Current runner version: '2.324.0'
+2025-05-30T19:12:42.4722308Z ##[group]Operating System
+2025-05-30T19:12:42.4723561Z Ubuntu
+2025-05-30T19:12:42.4724387Z 24.04.2
+2025-05-30T19:12:42.4725330Z LTS
+2025-05-30T19:12:42.4726397Z ##[endgroup]
+2025-05-30T19:12:42.4727306Z ##[group]Runner Image
+2025-05-30T19:12:42.4728409Z Image: ubuntu-24.04
+2025-05-30T19:12:42.4729290Z Version: 20250527.1.0
+2025-05-30T19:12:42.4731264Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250527.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-05-30T19:12:42.4733801Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250527.1
+2025-05-30T19:12:42.4735417Z ##[endgroup]
+2025-05-30T19:12:42.4736733Z ##[group]Runner Image Provisioner
+2025-05-30T19:12:42.4737912Z 2.0.437.1
+2025-05-30T19:12:42.4738694Z ##[endgroup]
+2025-05-30T19:12:42.4740655Z ##[group]GITHUB_TOKEN Permissions
+2025-05-30T19:12:42.4743335Z Contents: read
+2025-05-30T19:12:42.4744300Z Metadata: read
+2025-05-30T19:12:42.4745799Z Packages: read
+2025-05-30T19:12:42.4746868Z ##[endgroup]
+2025-05-30T19:12:42.4751092Z Secret source: Actions
+2025-05-30T19:12:42.4752203Z Prepare workflow directory
+2025-05-30T19:12:42.5231748Z Prepare all required actions
+2025-05-30T19:12:42.5289038Z Getting action download info
+2025-05-30T19:12:42.7566539Z ##[group]Download immutable action package 'actions/checkout@v3'
+2025-05-30T19:12:42.7567686Z Version: 3.6.0
+2025-05-30T19:12:42.7568776Z Digest: sha256:942562b9c7d4b1f2557f1da21f4d3eb4eb4fd01f2ad78b2a6e187d1b193e0a0f
+2025-05-30T19:12:42.7569949Z Source commit SHA: f43a0e5ff2bd294095638e18286ca9a3d1956744
+2025-05-30T19:12:42.7570744Z ##[endgroup]
+2025-05-30T19:12:42.8474767Z ##[group]Download immutable action package 'docker/setup-buildx-action@v3'
+2025-05-30T19:12:42.8475872Z Version: 3.10.0
+2025-05-30T19:12:42.8476668Z Digest: sha256:6377aa62314fdde26434bd58e12019ae489ebac6c72d541f3b1723362eeca7cd
+2025-05-30T19:12:42.8477753Z Source commit SHA: b5ca514318bd6ebac0fb2aedd5d36ec1b5c232a2
+2025-05-30T19:12:42.8478485Z ##[endgroup]
+2025-05-30T19:12:43.0707001Z ##[group]Download immutable action package 'docker/login-action@v3'
+2025-05-30T19:12:43.0707817Z Version: 3.4.0
+2025-05-30T19:12:43.0708651Z Digest: sha256:864ebd28db095e1602e6ef999f46a4f575083ea874918fbccf0994c2a7680450
+2025-05-30T19:12:43.0709640Z Source commit SHA: 74a5d142397b4f367a81961eba4e8cd7edddf772
+2025-05-30T19:12:43.0710323Z ##[endgroup]
+2025-05-30T19:12:43.3152365Z ##[group]Download immutable action package 'docker/build-push-action@v5'
+2025-05-30T19:12:43.3153198Z Version: 5.4.0
+2025-05-30T19:12:43.3153940Z Digest: sha256:b1eb22c8ac697d9d0cdfecd96982afc33f5bf7897b1a76f89fd6cb58e9f98e3e
+2025-05-30T19:12:43.3154887Z Source commit SHA: ca052bb54ab0790a636c9b5f226502c73d547a25
+2025-05-30T19:12:43.3155572Z ##[endgroup]
+2025-05-30T19:12:43.6318180Z Complete job name: build-and-deploy
+2025-05-30T19:12:43.7015858Z ##[group]Run actions/checkout@v3
+2025-05-30T19:12:43.7016827Z with:
+2025-05-30T19:12:43.7017278Z   repository: cimtdev/cimt-v1
+2025-05-30T19:12:43.7018033Z   token: ***
+2025-05-30T19:12:43.7018472Z   ssh-strict: true
+2025-05-30T19:12:43.7018953Z   persist-credentials: true
+2025-05-30T19:12:43.7019466Z   clean: true
+2025-05-30T19:12:43.7019933Z   sparse-checkout-cone-mode: true
+2025-05-30T19:12:43.7020479Z   fetch-depth: 1
+2025-05-30T19:12:43.7020925Z   fetch-tags: false
+2025-05-30T19:12:43.7021365Z   lfs: false
+2025-05-30T19:12:43.7021780Z   submodules: false
+2025-05-30T19:12:43.7022238Z   set-safe-directory: true
+2025-05-30T19:12:43.7022961Z ##[endgroup]
+2025-05-30T19:12:43.8604829Z Syncing repository: cimtdev/cimt-v1
+2025-05-30T19:12:43.8607202Z ##[group]Getting Git version info
+2025-05-30T19:12:43.8608044Z Working directory is '/home/runner/work/cimt-v1/cimt-v1'
+2025-05-30T19:12:43.8609373Z [command]/usr/bin/git version
+2025-05-30T19:12:43.8641947Z git version 2.49.0
+2025-05-30T19:12:43.8670257Z ##[endgroup]
+2025-05-30T19:12:43.8687402Z Temporarily overriding HOME='/home/runner/work/_temp/4696380e-63a5-4134-aeec-cdc5306b9877' before making global git config changes
+2025-05-30T19:12:43.8689322Z Adding repository directory to the temporary git global config as a safe directory
+2025-05-30T19:12:43.8691281Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cimt-v1/cimt-v1
+2025-05-30T19:12:43.8722502Z Deleting the contents of '/home/runner/work/cimt-v1/cimt-v1'
+2025-05-30T19:12:43.8727292Z ##[group]Initializing the repository
+2025-05-30T19:12:43.8731371Z [command]/usr/bin/git init /home/runner/work/cimt-v1/cimt-v1
+2025-05-30T19:12:43.8795003Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-05-30T19:12:43.8796967Z hint: is subject to change. To configure the initial branch name to use in all
+2025-05-30T19:12:43.8798234Z hint: of your new repositories, which will suppress this warning, call:
+2025-05-30T19:12:43.8799770Z hint:
+2025-05-30T19:12:43.8800768Z hint: 	git config --global init.defaultBranch <name>
+2025-05-30T19:12:43.8802129Z hint:
+2025-05-30T19:12:43.8803726Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-05-30T19:12:43.8806358Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-05-30T19:12:43.8808101Z hint:
+2025-05-30T19:12:43.8809058Z hint: 	git branch -m <name>
+2025-05-30T19:12:43.8810626Z Initialized empty Git repository in /home/runner/work/cimt-v1/cimt-v1/.git/
+2025-05-30T19:12:43.8814173Z [command]/usr/bin/git remote add origin https://github.com/cimtdev/cimt-v1
+2025-05-30T19:12:43.8844698Z ##[endgroup]
+2025-05-30T19:12:43.8846165Z ##[group]Disabling automatic garbage collection
+2025-05-30T19:12:43.8847493Z [command]/usr/bin/git config --local gc.auto 0
+2025-05-30T19:12:43.8873981Z ##[endgroup]
+2025-05-30T19:12:43.8874896Z ##[group]Setting up auth
+2025-05-30T19:12:43.8879445Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-05-30T19:12:43.8905983Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-05-30T19:12:43.9187490Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-05-30T19:12:43.9213699Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-05-30T19:12:43.9434037Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-05-30T19:12:43.9467330Z ##[endgroup]
+2025-05-30T19:12:43.9469178Z ##[group]Fetching the repository
+2025-05-30T19:12:43.9476873Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +2e172018d0f273f28adfc3a186dbc26238985a12:refs/remotes/origin/main
+2025-05-30T19:12:44.1581710Z remote: Enumerating objects: 31, done.        
+2025-05-30T19:12:44.1582816Z remote: Counting objects:   3% (1/31)        
+2025-05-30T19:12:44.1583700Z remote: Counting objects:   6% (2/31)        
+2025-05-30T19:12:44.1584517Z remote: Counting objects:   9% (3/31)        
+2025-05-30T19:12:44.1585271Z remote: Counting objects:  12% (4/31)        
+2025-05-30T19:12:44.1586331Z remote: Counting objects:  16% (5/31)        
+2025-05-30T19:12:44.1587174Z remote: Counting objects:  19% (6/31)        
+2025-05-30T19:12:44.1587963Z remote: Counting objects:  22% (7/31)        
+2025-05-30T19:12:44.1588693Z remote: Counting objects:  25% (8/31)        
+2025-05-30T19:12:44.1589487Z remote: Counting objects:  29% (9/31)        
+2025-05-30T19:12:44.1590277Z remote: Counting objects:  32% (10/31)        
+2025-05-30T19:12:44.1591083Z remote: Counting objects:  35% (11/31)        
+2025-05-30T19:12:44.1592293Z remote: Counting objects:  38% (12/31)        
+2025-05-30T19:12:44.1593401Z remote: Counting objects:  41% (13/31)        
+2025-05-30T19:12:44.1594652Z remote: Counting objects:  45% (14/31)        
+2025-05-30T19:12:44.1596155Z remote: Counting objects:  48% (15/31)        
+2025-05-30T19:12:44.1597812Z remote: Counting objects:  51% (16/31)        
+2025-05-30T19:12:44.1598544Z remote: Counting objects:  54% (17/31)        
+2025-05-30T19:12:44.1599445Z remote: Counting objects:  58% (18/31)        
+2025-05-30T19:12:44.1600721Z remote: Counting objects:  61% (19/31)        
+2025-05-30T19:12:44.1601925Z remote: Counting objects:  64% (20/31)        
+2025-05-30T19:12:44.1603133Z remote: Counting objects:  67% (21/31)        
+2025-05-30T19:12:44.1604019Z remote: Counting objects:  70% (22/31)        
+2025-05-30T19:12:44.1604868Z remote: Counting objects:  74% (23/31)        
+2025-05-30T19:12:44.1606070Z remote: Counting objects:  77% (24/31)        
+2025-05-30T19:12:44.1606959Z remote: Counting objects:  80% (25/31)        
+2025-05-30T19:12:44.1607876Z remote: Counting objects:  83% (26/31)        
+2025-05-30T19:12:44.1608897Z remote: Counting objects:  87% (27/31)        
+2025-05-30T19:12:44.1609776Z remote: Counting objects:  90% (28/31)        
+2025-05-30T19:12:44.1610966Z remote: Counting objects:  93% (29/31)        
+2025-05-30T19:12:44.1611886Z remote: Counting objects:  96% (30/31)        
+2025-05-30T19:12:44.1612713Z remote: Counting objects: 100% (31/31)        
+2025-05-30T19:12:44.1613710Z remote: Counting objects: 100% (31/31), done.        
+2025-05-30T19:12:44.1614691Z remote: Compressing objects:   3% (1/27)        
+2025-05-30T19:12:44.1615778Z remote: Compressing objects:   7% (2/27)        
+2025-05-30T19:12:44.1616924Z remote: Compressing objects:  11% (3/27)        
+2025-05-30T19:12:44.1617805Z remote: Compressing objects:  14% (4/27)        
+2025-05-30T19:12:44.1618922Z remote: Compressing objects:  18% (5/27)        
+2025-05-30T19:12:44.1620044Z remote: Compressing objects:  22% (6/27)        
+2025-05-30T19:12:44.1621066Z remote: Compressing objects:  25% (7/27)        
+2025-05-30T19:12:44.1621929Z remote: Compressing objects:  29% (8/27)        
+2025-05-30T19:12:44.1622885Z remote: Compressing objects:  33% (9/27)        
+2025-05-30T19:12:44.1623795Z remote: Compressing objects:  37% (10/27)        
+2025-05-30T19:12:44.1624668Z remote: Compressing objects:  40% (11/27)        
+2025-05-30T19:12:44.1626011Z remote: Compressing objects:  44% (12/27)        
+2025-05-30T19:12:44.1626943Z remote: Compressing objects:  48% (13/27)        
+2025-05-30T19:12:44.1627830Z remote: Compressing objects:  51% (14/27)        
+2025-05-30T19:12:44.1628847Z remote: Compressing objects:  55% (15/27)        
+2025-05-30T19:12:44.1629760Z remote: Compressing objects:  59% (16/27)        
+2025-05-30T19:12:44.1630612Z remote: Compressing objects:  62% (17/27)        
+2025-05-30T19:12:44.1631841Z remote: Compressing objects:  66% (18/27)        
+2025-05-30T19:12:44.1632790Z remote: Compressing objects:  70% (19/27)        
+2025-05-30T19:12:44.1634005Z remote: Compressing objects:  74% (20/27)        
+2025-05-30T19:12:44.1635366Z remote: Compressing objects:  77% (21/27)        
+2025-05-30T19:12:44.1636761Z remote: Compressing objects:  81% (22/27)        
+2025-05-30T19:12:44.1637935Z remote: Compressing objects:  85% (23/27)        
+2025-05-30T19:12:44.1638721Z remote: Compressing objects:  88% (24/27)        
+2025-05-30T19:12:44.1639483Z remote: Compressing objects:  92% (25/27)        
+2025-05-30T19:12:44.1640254Z remote: Compressing objects:  96% (26/27)        
+2025-05-30T19:12:44.1641036Z remote: Compressing objects: 100% (27/27)        
+2025-05-30T19:12:44.1641872Z remote: Compressing objects: 100% (27/27), done.        
+2025-05-30T19:12:44.1642914Z remote: Total 31 (delta 0), reused 30 (delta 0), pack-reused 0 (from 0)        
+2025-05-30T19:12:44.1720494Z From https://github.com/cimtdev/cimt-v1
+2025-05-30T19:12:44.1721564Z  * [new ref]         2e172018d0f273f28adfc3a186dbc26238985a12 -> origin/main
+2025-05-30T19:12:44.1750010Z ##[endgroup]
+2025-05-30T19:12:44.1751950Z ##[group]Determining the checkout info
+2025-05-30T19:12:44.1753758Z ##[endgroup]
+2025-05-30T19:12:44.1755329Z ##[group]Checking out the ref
+2025-05-30T19:12:44.1757715Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-05-30T19:12:44.1817507Z Switched to a new branch 'main'
+2025-05-30T19:12:44.1820503Z branch 'main' set up to track 'origin/main'.
+2025-05-30T19:12:44.1827967Z ##[endgroup]
+2025-05-30T19:12:44.1860411Z [command]/usr/bin/git log -1 --format='%H'
+2025-05-30T19:12:44.1881954Z '2e172018d0f273f28adfc3a186dbc26238985a12'
+2025-05-30T19:12:44.2108231Z ##[group]Run docker/setup-buildx-action@v3
+2025-05-30T19:12:44.2109001Z with:
+2025-05-30T19:12:44.2109644Z   driver: docker-container
+2025-05-30T19:12:44.2110263Z   install: false
+2025-05-30T19:12:44.2110758Z   use: true
+2025-05-30T19:12:44.2111306Z   cache-binary: true
+2025-05-30T19:12:44.2111914Z   cleanup: true
+2025-05-30T19:12:44.2112442Z ##[endgroup]
+2025-05-30T19:12:44.4623277Z ##[group]Docker info
+2025-05-30T19:12:44.4651448Z [command]/usr/bin/docker version
+2025-05-30T19:12:44.5326219Z Client: Docker Engine - Community
+2025-05-30T19:12:44.5327934Z  Version:           28.0.4
+2025-05-30T19:12:44.5329364Z  API version:       1.48
+2025-05-30T19:12:44.5330383Z  Go version:        go1.23.7
+2025-05-30T19:12:44.5331281Z  Git commit:        b8034c0
+2025-05-30T19:12:44.5332188Z  Built:             Tue Mar 25 15:07:16 2025
+2025-05-30T19:12:44.5333189Z  OS/Arch:           linux/amd64
+2025-05-30T19:12:44.5334086Z  Context:           default
+2025-05-30T19:12:44.5334626Z 
+2025-05-30T19:12:44.5335041Z Server: Docker Engine - Community
+2025-05-30T19:12:44.5336228Z  Engine:
+2025-05-30T19:12:44.5337722Z   Version:          28.0.4
+2025-05-30T19:12:44.5339282Z   API version:      1.48 (minimum version 1.24)
+2025-05-30T19:12:44.5341012Z   Go version:       go1.23.7
+2025-05-30T19:12:44.5342467Z   Git commit:       6430e49
+2025-05-30T19:12:44.5344177Z   Built:            Tue Mar 25 15:07:16 2025
+2025-05-30T19:12:44.5346404Z   OS/Arch:          linux/amd64
+2025-05-30T19:12:44.5348278Z   Experimental:     false
+2025-05-30T19:12:44.5350025Z  containerd:
+2025-05-30T19:12:44.5351650Z   Version:          1.7.27
+2025-05-30T19:12:44.5353806Z   GitCommit:        05044ec0a9a75232cad458027ca83437aae3f4da
+2025-05-30T19:12:44.5356820Z  runc:
+2025-05-30T19:12:44.5358515Z   Version:          1.2.5
+2025-05-30T19:12:44.5360500Z   GitCommit:        v1.2.5-0-g59923ef
+2025-05-30T19:12:44.5362976Z  docker-init:
+2025-05-30T19:12:44.5364994Z   Version:          0.19.0
+2025-05-30T19:12:44.5367045Z   GitCommit:        de40ad0
+2025-05-30T19:12:44.5388421Z [command]/usr/bin/docker info
+2025-05-30T19:12:44.7354584Z Client: Docker Engine - Community
+2025-05-30T19:12:44.7357244Z  Version:    28.0.4
+2025-05-30T19:12:44.7358817Z  Context:    default
+2025-05-30T19:12:44.7360393Z  Debug Mode: false
+2025-05-30T19:12:44.7361897Z  Plugins:
+2025-05-30T19:12:44.7363381Z   buildx: Docker Buildx (Docker Inc.)
+2025-05-30T19:12:44.7365309Z     Version:  v0.24.0
+2025-05-30T19:12:44.7367389Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+2025-05-30T19:12:44.7369159Z   compose: Docker Compose (Docker Inc.)
+2025-05-30T19:12:44.7370429Z     Version:  v2.36.0
+2025-05-30T19:12:44.7371695Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+2025-05-30T19:12:44.7372895Z 
+2025-05-30T19:12:44.7373495Z Server:
+2025-05-30T19:12:44.7374590Z  Containers: 0
+2025-05-30T19:12:44.7375498Z   Running: 0
+2025-05-30T19:12:44.7377021Z   Paused: 0
+2025-05-30T19:12:44.7377902Z   Stopped: 0
+2025-05-30T19:12:44.7378955Z  Images: 0
+2025-05-30T19:12:44.7380075Z  Server Version: 28.0.4
+2025-05-30T19:12:44.7381255Z  Storage Driver: overlay2
+2025-05-30T19:12:44.7382434Z   Backing Filesystem: extfs
+2025-05-30T19:12:44.7383883Z   Supports d_type: true
+2025-05-30T19:12:44.7385150Z   Using metacopy: false
+2025-05-30T19:12:44.7386513Z   Native Overlay Diff: false
+2025-05-30T19:12:44.7387791Z   userxattr: false
+2025-05-30T19:12:44.7388962Z  Logging Driver: json-file
+2025-05-30T19:12:44.7390228Z  Cgroup Driver: systemd
+2025-05-30T19:12:44.7391438Z  Cgroup Version: 2
+2025-05-30T19:12:44.7392559Z  Plugins:
+2025-05-30T19:12:44.7393548Z   Volume: local
+2025-05-30T19:12:44.7394771Z   Network: bridge host ipvlan macvlan null overlay
+2025-05-30T19:12:44.7398266Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+2025-05-30T19:12:44.7400681Z  Swarm: inactive
+2025-05-30T19:12:44.7401903Z  Runtimes: io.containerd.runc.v2 runc
+2025-05-30T19:12:44.7403268Z  Default Runtime: runc
+2025-05-30T19:12:44.7404481Z  Init Binary: docker-init
+2025-05-30T19:12:44.7406432Z  containerd version: 05044ec0a9a75232cad458027ca83437aae3f4da
+2025-05-30T19:12:44.7408181Z  runc version: v1.2.5-0-g59923ef
+2025-05-30T19:12:44.7409590Z  init version: de40ad0
+2025-05-30T19:12:44.7410606Z  Security Options:
+2025-05-30T19:12:44.7411532Z   apparmor
+2025-05-30T19:12:44.7412374Z   seccomp
+2025-05-30T19:12:44.7413242Z    Profile: builtin
+2025-05-30T19:12:44.7414180Z   cgroupns
+2025-05-30T19:12:44.7415079Z  Kernel Version: 6.11.0-1015-azure
+2025-05-30T19:12:44.7416717Z  Operating System: Ubuntu 24.04.2 LTS
+2025-05-30T19:12:44.7417942Z  OSType: linux
+2025-05-30T19:12:44.7418902Z  Architecture: x86_64
+2025-05-30T19:12:44.7419875Z  CPUs: 4
+2025-05-30T19:12:44.7420742Z  Total Memory: 15.62GiB
+2025-05-30T19:12:44.7421751Z  Name: fv-az1391-121
+2025-05-30T19:12:44.7422784Z  ID: ce390d70-f563-4bf4-a4b7-c756b3b6e287
+2025-05-30T19:12:44.7424082Z  Docker Root Dir: /var/lib/docker
+2025-05-30T19:12:44.7425247Z  Debug Mode: false
+2025-05-30T19:12:44.7426442Z  Username: githubactions
+2025-05-30T19:12:44.7427477Z  Experimental: false
+2025-05-30T19:12:44.7428405Z  Insecure Registries:
+2025-05-30T19:12:44.7433386Z   ::1/128
+2025-05-30T19:12:44.7434218Z   127.0.0.0/8
+2025-05-30T19:12:44.7435098Z  Live Restore Enabled: false
+2025-05-30T19:12:44.7436066Z 
+2025-05-30T19:12:44.7437281Z ##[endgroup]
+2025-05-30T19:12:44.7960435Z ##[group]Buildx version
+2025-05-30T19:12:44.7981900Z [command]/usr/bin/docker buildx version
+2025-05-30T19:12:44.8363436Z github.com/docker/buildx v0.24.0 d0e5e86c8b88ae4865040bc96917c338f4dd673c
+2025-05-30T19:12:44.8393768Z ##[endgroup]
+2025-05-30T19:12:44.8542118Z ##[group]Inspecting default docker context
+2025-05-30T19:12:44.8674643Z [
+2025-05-30T19:12:44.8675958Z   {
+2025-05-30T19:12:44.8676790Z     "Name": "default",
+2025-05-30T19:12:44.8677749Z     "Metadata": {},
+2025-05-30T19:12:44.8678629Z     "Endpoints": {
+2025-05-30T19:12:44.8679494Z       "docker": {
+2025-05-30T19:12:44.8680571Z         "Host": "unix:///var/run/docker.sock",
+2025-05-30T19:12:44.8682092Z         "SkipTLSVerify": false
+2025-05-30T19:12:44.8683332Z       }
+2025-05-30T19:12:44.8684294Z     },
+2025-05-30T19:12:44.8685230Z     "TLSMaterial": {},
+2025-05-30T19:12:44.8686548Z     "Storage": {
+2025-05-30T19:12:44.8687618Z       "MetadataPath": "<IN MEMORY>",
+2025-05-30T19:12:44.8689026Z       "TLSPath": "<IN MEMORY>"
+2025-05-30T19:12:44.8690147Z     }
+2025-05-30T19:12:44.8691139Z   }
+2025-05-30T19:12:44.8691937Z ]
+2025-05-30T19:12:44.8693725Z ##[endgroup]
+2025-05-30T19:12:44.8695548Z ##[group]Creating a new builder instance
+2025-05-30T19:12:44.9186689Z [command]/usr/bin/docker buildx create --name builder-9fa6758c-edfb-41f8-b15b-836edfe7b000 --driver docker-container --buildkitd-flags --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host --use
+2025-05-30T19:12:44.9639245Z builder-9fa6758c-edfb-41f8-b15b-836edfe7b000
+2025-05-30T19:12:44.9670689Z ##[endgroup]
+2025-05-30T19:12:44.9673200Z ##[group]Booting builder
+2025-05-30T19:12:44.9703543Z [command]/usr/bin/docker buildx inspect --bootstrap --builder builder-9fa6758c-edfb-41f8-b15b-836edfe7b000
+2025-05-30T19:12:45.0097588Z #1 [internal] booting buildkit
+2025-05-30T19:12:45.1600864Z #1 pulling image moby/buildkit:buildx-stable-1
+2025-05-30T19:12:46.8768847Z #1 pulling image moby/buildkit:buildx-stable-1 1.9s done
+2025-05-30T19:12:47.0275289Z #1 creating container buildx_buildkit_builder-9fa6758c-edfb-41f8-b15b-836edfe7b0000
+2025-05-30T19:12:47.1315162Z #1 creating container buildx_buildkit_builder-9fa6758c-edfb-41f8-b15b-836edfe7b0000 0.3s done
+2025-05-30T19:12:47.1346391Z #1 DONE 2.1s
+2025-05-30T19:12:47.1629782Z Name:          builder-9fa6758c-edfb-41f8-b15b-836edfe7b000
+2025-05-30T19:12:47.1631406Z Driver:        docker-container
+2025-05-30T19:12:47.1631882Z Last Activity: 2025-05-30 19:12:44 +0000 UTC
+2025-05-30T19:12:47.1632117Z 
+2025-05-30T19:12:47.1632233Z Nodes:
+2025-05-30T19:12:47.1632545Z Name:                  builder-9fa6758c-edfb-41f8-b15b-836edfe7b0000
+2025-05-30T19:12:47.1632959Z Endpoint:              unix:///var/run/docker.sock
+2025-05-30T19:12:47.1633552Z Status:                running
+2025-05-30T19:12:47.1634144Z BuildKit daemon flags: --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+2025-05-30T19:12:47.1634695Z BuildKit version:      v0.21.1
+2025-05-30T19:12:47.1635124Z Platforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/386
+2025-05-30T19:12:47.1635938Z Labels:
+2025-05-30T19:12:47.1636263Z  org.mobyproject.buildkit.worker.executor:         oci
+2025-05-30T19:12:47.1636716Z  org.mobyproject.buildkit.worker.hostname:         f2987d18825b
+2025-05-30T19:12:47.1637176Z  org.mobyproject.buildkit.worker.network:          host
+2025-05-30T19:12:47.1637673Z  org.mobyproject.buildkit.worker.oci.process-mode: sandbox
+2025-05-30T19:12:47.1638141Z  org.mobyproject.buildkit.worker.selinux.enabled:  false
+2025-05-30T19:12:47.1638602Z  org.mobyproject.buildkit.worker.snapshotter:      overlayfs
+2025-05-30T19:12:47.1638975Z GC Policy rule#0:
+2025-05-30T19:12:47.1639218Z  All:            false
+2025-05-30T19:12:47.1639615Z  Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout
+2025-05-30T19:12:47.1640034Z  Keep Duration:  48h0m0s
+2025-05-30T19:12:47.1640328Z  Max Used Space: 488.3MiB
+2025-05-30T19:12:47.1640595Z GC Policy rule#1:
+2025-05-30T19:12:47.1640847Z  All:            false
+2025-05-30T19:12:47.1641201Z  Keep Duration:  1440h0m0s
+2025-05-30T19:12:47.1641500Z  Reserved Space: 7.451GiB
+2025-05-30T19:12:47.1641789Z  Max Used Space: 54.02GiB
+2025-05-30T19:12:47.1642048Z  Min Free Space: 13.97GiB
+2025-05-30T19:12:47.1642290Z GC Policy rule#2:
+2025-05-30T19:12:47.1642519Z  All:            false
+2025-05-30T19:12:47.1642767Z  Reserved Space: 7.451GiB
+2025-05-30T19:12:47.1643016Z  Max Used Space: 54.02GiB
+2025-05-30T19:12:47.1643268Z  Min Free Space: 13.97GiB
+2025-05-30T19:12:47.1643517Z GC Policy rule#3:
+2025-05-30T19:12:47.1643740Z  All:            true
+2025-05-30T19:12:47.1643980Z  Reserved Space: 7.451GiB
+2025-05-30T19:12:47.1644222Z  Max Used Space: 54.02GiB
+2025-05-30T19:12:47.1644472Z  Min Free Space: 13.97GiB
+2025-05-30T19:12:47.1675187Z ##[endgroup]
+2025-05-30T19:12:47.2475498Z ##[group]Inspect builder
+2025-05-30T19:12:47.2513185Z {
+2025-05-30T19:12:47.2513632Z   "nodes": [
+2025-05-30T19:12:47.2514038Z     {
+2025-05-30T19:12:47.2514521Z       "name": "builder-9fa6758c-edfb-41f8-b15b-836edfe7b0000",
+2025-05-30T19:12:47.2514960Z       "endpoint": "unix:///var/run/docker.sock",
+2025-05-30T19:12:47.2515306Z       "status": "running",
+2025-05-30T19:12:47.2516052Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+2025-05-30T19:12:47.2516676Z       "buildkit": "v0.21.1",
+2025-05-30T19:12:47.2517056Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386",
+2025-05-30T19:12:47.2517438Z       "features": {
+2025-05-30T19:12:47.2517974Z         "Automatically load images to the Docker Engine image store": true,
+2025-05-30T19:12:47.2518643Z         "Cache export": true,
+2025-05-30T19:12:47.2519109Z         "Direct push": true,
+2025-05-30T19:12:47.2519538Z         "Docker exporter": true,
+2025-05-30T19:12:47.2519839Z         "Multi-platform build": true,
+2025-05-30T19:12:47.2520132Z         "OCI exporter": true
+2025-05-30T19:12:47.2520389Z       },
+2025-05-30T19:12:47.2520742Z       "labels": {
+2025-05-30T19:12:47.2521238Z         "org.mobyproject.buildkit.worker.executor": "oci",
+2025-05-30T19:12:47.2521758Z         "org.mobyproject.buildkit.worker.hostname": "f2987d18825b",
+2025-05-30T19:12:47.2522192Z         "org.mobyproject.buildkit.worker.network": "host",
+2025-05-30T19:12:47.2522642Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+2025-05-30T19:12:47.2523411Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+2025-05-30T19:12:47.2523877Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+2025-05-30T19:12:47.2524228Z       },
+2025-05-30T19:12:47.2524438Z       "gcPolicy": [
+2025-05-30T19:12:47.2524671Z         {
+2025-05-30T19:12:47.2525028Z           "all": false,
+2025-05-30T19:12:47.2525272Z           "filter": [
+2025-05-30T19:12:47.2525522Z             "type==source.local",
+2025-05-30T19:12:47.2526037Z             "type==exec.cachemount",
+2025-05-30T19:12:47.2526343Z             "type==source.git.checkout"
+2025-05-30T19:12:47.2526619Z           ],
+2025-05-30T19:12:47.2526854Z           "keepDuration": "48h0m0s"
+2025-05-30T19:12:47.2527125Z         },
+2025-05-30T19:12:47.2527326Z         {
+2025-05-30T19:12:47.2527538Z           "all": false,
+2025-05-30T19:12:47.2527791Z           "keepDuration": "1440h0m0s"
+2025-05-30T19:12:47.2528061Z         },
+2025-05-30T19:12:47.2528284Z         {
+2025-05-30T19:12:47.2528493Z           "all": false
+2025-05-30T19:12:47.2528719Z         },
+2025-05-30T19:12:47.2528918Z         {
+2025-05-30T19:12:47.2529115Z           "all": true
+2025-05-30T19:12:47.2529340Z         }
+2025-05-30T19:12:47.2529540Z       ]
+2025-05-30T19:12:47.2529741Z     }
+2025-05-30T19:12:47.2529932Z   ],
+2025-05-30T19:12:47.2530249Z   "name": "builder-9fa6758c-edfb-41f8-b15b-836edfe7b000",
+2025-05-30T19:12:47.2530611Z   "driver": "docker-container",
+2025-05-30T19:12:47.2530903Z   "lastActivity": "2025-05-30T19:12:44.000Z"
+2025-05-30T19:12:47.2531184Z }
+2025-05-30T19:12:47.2531640Z ##[endgroup]
+2025-05-30T19:12:47.2532039Z ##[group]BuildKit version
+2025-05-30T19:12:47.2532361Z builder-9fa6758c-edfb-41f8-b15b-836edfe7b0000: v0.21.1
+2025-05-30T19:12:47.2532853Z ##[endgroup]
+2025-05-30T19:12:47.2667697Z ##[group]Run docker/login-action@v3
+2025-05-30T19:12:47.2668019Z with:
+2025-05-30T19:12:47.2668575Z   registry: ***
+2025-05-30T19:12:47.2668826Z   username: ***
+2025-05-30T19:12:47.2669235Z   password: ***
+2025-05-30T19:12:47.2669460Z   ecr: auto
+2025-05-30T19:12:47.2669665Z   logout: true
+2025-05-30T19:12:47.2669890Z ##[endgroup]
+2025-05-30T19:12:47.5704617Z Logging into ***...
+2025-05-30T19:12:47.9551204Z Login Succeeded!
+2025-05-30T19:12:47.9738242Z ##[group]Run docker/build-push-action@v5
+2025-05-30T19:12:47.9738540Z with:
+2025-05-30T19:12:47.9738714Z   context: .
+2025-05-30T19:12:47.9738883Z   push: true
+2025-05-30T19:12:47.9739209Z   tags: ***/cimt-chat:latest
+2025-05-30T19:12:47.9739426Z   load: false
+2025-05-30T19:12:47.9739604Z   no-cache: false
+2025-05-30T19:12:47.9739780Z   pull: false
+2025-05-30T19:12:47.9740067Z   github-token: ***
+2025-05-30T19:12:47.9740261Z ##[endgroup]
+2025-05-30T19:12:48.2002165Z ##[group]GitHub Actions runtime token ACs
+2025-05-30T19:12:48.2012918Z refs/heads/main: read/write
+2025-05-30T19:12:48.2014253Z ##[endgroup]
+2025-05-30T19:12:48.2014974Z ##[group]Docker info
+2025-05-30T19:12:48.2060702Z [command]/usr/bin/docker version
+2025-05-30T19:12:48.2262481Z Client: Docker Engine - Community
+2025-05-30T19:12:48.2265452Z  Version:           28.0.4
+2025-05-30T19:12:48.2266839Z  API version:       1.48
+2025-05-30T19:12:48.2267740Z  Go version:        go1.23.7
+2025-05-30T19:12:48.2268201Z  Git commit:        b8034c0
+2025-05-30T19:12:48.2268463Z  Built:             Tue Mar 25 15:07:16 2025
+2025-05-30T19:12:48.2268722Z  OS/Arch:           linux/amd64
+2025-05-30T19:12:48.2268946Z  Context:           default
+2025-05-30T19:12:48.2269091Z 
+2025-05-30T19:12:48.2269188Z Server: Docker Engine - Community
+2025-05-30T19:12:48.2269420Z  Engine:
+2025-05-30T19:12:48.2269589Z   Version:          28.0.4
+2025-05-30T19:12:48.2269838Z   API version:      1.48 (minimum version 1.24)
+2025-05-30T19:12:48.2270107Z   Go version:       go1.23.7
+2025-05-30T19:12:48.2270319Z   Git commit:       6430e49
+2025-05-30T19:12:48.2270535Z   Built:            Tue Mar 25 15:07:16 2025
+2025-05-30T19:12:48.2270778Z   OS/Arch:          linux/amd64
+2025-05-30T19:12:48.2270991Z   Experimental:     false
+2025-05-30T19:12:48.2271495Z  containerd:
+2025-05-30T19:12:48.2271671Z   Version:          1.7.27
+2025-05-30T19:12:48.2271925Z   GitCommit:        05044ec0a9a75232cad458027ca83437aae3f4da
+2025-05-30T19:12:48.2272203Z  runc:
+2025-05-30T19:12:48.2272374Z   Version:          1.2.5
+2025-05-30T19:12:48.2272590Z   GitCommit:        v1.2.5-0-g59923ef
+2025-05-30T19:12:48.2272828Z  docker-init:
+2025-05-30T19:12:48.2273002Z   Version:          0.19.0
+2025-05-30T19:12:48.2273208Z   GitCommit:        de40ad0
+2025-05-30T19:12:48.2320963Z [command]/usr/bin/docker info
+2025-05-30T19:12:48.2741780Z Client: Docker Engine - Community
+2025-05-30T19:12:48.2742777Z  Version:    28.0.4
+2025-05-30T19:12:48.2743418Z  Context:    default
+2025-05-30T19:12:48.2744068Z  Debug Mode: false
+2025-05-30T19:12:48.2744419Z  Plugins:
+2025-05-30T19:12:48.2744898Z   buildx: Docker Buildx (Docker Inc.)
+2025-05-30T19:12:48.2745336Z     Version:  v0.24.0
+2025-05-30T19:12:48.2746164Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+2025-05-30T19:12:48.2746799Z   compose: Docker Compose (Docker Inc.)
+2025-05-30T19:12:48.2747251Z     Version:  v2.36.0
+2025-05-30T19:12:48.2747708Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+2025-05-30T19:12:48.2748114Z 
+2025-05-30T19:12:48.2748257Z Server:
+2025-05-30T19:12:48.2748559Z  Containers: 1
+2025-05-30T19:12:48.2748876Z   Running: 1
+2025-05-30T19:12:48.2749168Z   Paused: 0
+2025-05-30T19:12:48.2749466Z   Stopped: 0
+2025-05-30T19:12:48.2749774Z  Images: 1
+2025-05-30T19:12:48.2750085Z  Server Version: 28.0.4
+2025-05-30T19:12:48.2750461Z  Storage Driver: overlay2
+2025-05-30T19:12:48.2750849Z   Backing Filesystem: extfs
+2025-05-30T19:12:48.2751246Z   Supports d_type: true
+2025-05-30T19:12:48.2751603Z   Using metacopy: false
+2025-05-30T19:12:48.2751935Z   Native Overlay Diff: false
+2025-05-30T19:12:48.2752291Z   userxattr: false
+2025-05-30T19:12:48.2752629Z  Logging Driver: json-file
+2025-05-30T19:12:48.2753000Z  Cgroup Driver: systemd
+2025-05-30T19:12:48.2753349Z  Cgroup Version: 2
+2025-05-30T19:12:48.2753726Z  Plugins:
+2025-05-30T19:12:48.2754009Z   Volume: local
+2025-05-30T19:12:48.2754389Z   Network: bridge host ipvlan macvlan null overlay
+2025-05-30T19:12:48.2755484Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+2025-05-30T19:12:48.2756358Z  Swarm: inactive
+2025-05-30T19:12:48.2756712Z  Runtimes: io.containerd.runc.v2 runc
+2025-05-30T19:12:48.2757144Z  Default Runtime: runc
+2025-05-30T19:12:48.2757485Z  Init Binary: docker-init
+2025-05-30T19:12:48.2757985Z  containerd version: 05044ec0a9a75232cad458027ca83437aae3f4da
+2025-05-30T19:12:48.2758548Z  runc version: v1.2.5-0-g59923ef
+2025-05-30T19:12:48.2758942Z  init version: de40ad0
+2025-05-30T19:12:48.2759277Z  Security Options:
+2025-05-30T19:12:48.2759590Z   apparmor
+2025-05-30T19:12:48.2759874Z   seccomp
+2025-05-30T19:12:48.2760158Z    Profile: builtin
+2025-05-30T19:12:48.2760463Z   cgroupns
+2025-05-30T19:12:48.2760763Z  Kernel Version: 6.11.0-1015-azure
+2025-05-30T19:12:48.2761189Z  Operating System: Ubuntu 24.04.2 LTS
+2025-05-30T19:12:48.2761614Z  OSType: linux
+2025-05-30T19:12:48.2761923Z  Architecture: x86_64
+2025-05-30T19:12:48.2762247Z  CPUs: 4
+2025-05-30T19:12:48.2762524Z  Total Memory: 15.62GiB
+2025-05-30T19:12:48.2762864Z  Name: fv-az1391-121
+2025-05-30T19:12:48.2763214Z  ID: ce390d70-f563-4bf4-a4b7-c756b3b6e287
+2025-05-30T19:12:48.2763602Z  Docker Root Dir: /var/lib/docker
+2025-05-30T19:12:48.2763927Z  Debug Mode: false
+2025-05-30T19:12:48.2764249Z  Username: githubactions
+2025-05-30T19:12:48.2764598Z  Experimental: false
+2025-05-30T19:12:48.2764933Z  Insecure Registries:
+2025-05-30T19:12:48.2765300Z   ::1/128
+2025-05-30T19:12:48.2765566Z   127.0.0.0/8
+2025-05-30T19:12:48.2766379Z  Live Restore Enabled: false
+2025-05-30T19:12:48.2766640Z 
+2025-05-30T19:12:48.2767450Z ##[endgroup]
+2025-05-30T19:12:48.2769113Z ##[group]Proxy configuration
+2025-05-30T19:12:48.2771674Z No proxy configuration found
+2025-05-30T19:12:48.2772478Z ##[endgroup]
+2025-05-30T19:12:48.3285551Z ##[group]Buildx version
+2025-05-30T19:12:48.3316704Z [command]/usr/bin/docker buildx version
+2025-05-30T19:12:48.3771002Z github.com/docker/buildx v0.24.0 d0e5e86c8b88ae4865040bc96917c338f4dd673c
+2025-05-30T19:12:48.3802875Z ##[endgroup]
+2025-05-30T19:12:48.3804278Z ##[group]Builder info
+2025-05-30T19:12:48.4661582Z {
+2025-05-30T19:12:48.4661977Z   "nodes": [
+2025-05-30T19:12:48.4662265Z     {
+2025-05-30T19:12:48.4662685Z       "name": "builder-9fa6758c-edfb-41f8-b15b-836edfe7b0000",
+2025-05-30T19:12:48.4663288Z       "endpoint": "unix:///var/run/docker.sock",
+2025-05-30T19:12:48.4663760Z       "status": "running",
+2025-05-30T19:12:48.4664638Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+2025-05-30T19:12:48.4665569Z       "buildkit": "v0.21.1",
+2025-05-30T19:12:48.4666489Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386",
+2025-05-30T19:12:48.4667034Z       "features": {
+2025-05-30T19:12:48.4667544Z         "Automatically load images to the Docker Engine image store": true,
+2025-05-30T19:12:48.4668186Z         "Cache export": true,
+2025-05-30T19:12:48.4668577Z         "Direct push": true,
+2025-05-30T19:12:48.4668964Z         "Docker exporter": true,
+2025-05-30T19:12:48.4669394Z         "Multi-platform build": true,
+2025-05-30T19:12:48.4669839Z         "OCI exporter": true
+2025-05-30T19:12:48.4670202Z       },
+2025-05-30T19:12:48.4670479Z       "labels": {
+2025-05-30T19:12:48.4670888Z         "org.mobyproject.buildkit.worker.executor": "oci",
+2025-05-30T19:12:48.4671590Z         "org.mobyproject.buildkit.worker.hostname": "f2987d18825b",
+2025-05-30T19:12:48.4672270Z         "org.mobyproject.buildkit.worker.network": "host",
+2025-05-30T19:12:48.4672989Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+2025-05-30T19:12:48.4673799Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+2025-05-30T19:12:48.4674587Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+2025-05-30T19:12:48.4675172Z       },
+2025-05-30T19:12:48.4675478Z       "gcPolicy": [
+2025-05-30T19:12:48.4676006Z         {
+2025-05-30T19:12:48.4676306Z           "all": false,
+2025-05-30T19:12:48.4676656Z           "filter": [
+2025-05-30T19:12:48.4677002Z             "type==source.local",
+2025-05-30T19:12:48.4677802Z             "type==exec.cachemount",
+2025-05-30T19:12:48.4678275Z             "type==source.git.checkout"
+2025-05-30T19:12:48.4678701Z           ],
+2025-05-30T19:12:48.4679025Z           "keepDuration": "48h0m0s"
+2025-05-30T19:12:48.4679424Z         },
+2025-05-30T19:12:48.4679715Z         {
+2025-05-30T19:12:48.4680006Z           "all": false,
+2025-05-30T19:12:48.4680354Z           "keepDuration": "1440h0m0s"
+2025-05-30T19:12:48.4680713Z         },
+2025-05-30T19:12:48.4680985Z         {
+2025-05-30T19:12:48.4681261Z           "all": false
+2025-05-30T19:12:48.4681575Z         },
+2025-05-30T19:12:48.4681842Z         {
+2025-05-30T19:12:48.4682123Z           "all": true
+2025-05-30T19:12:48.4682434Z         }
+2025-05-30T19:12:48.4682701Z       ]
+2025-05-30T19:12:48.4682982Z     }
+2025-05-30T19:12:48.4683255Z   ],
+2025-05-30T19:12:48.4683660Z   "name": "builder-9fa6758c-edfb-41f8-b15b-836edfe7b000",
+2025-05-30T19:12:48.4684214Z   "driver": "docker-container",
+2025-05-30T19:12:48.4684667Z   "lastActivity": "2025-05-30T19:12:44.000Z"
+2025-05-30T19:12:48.4685094Z }
+2025-05-30T19:12:48.4686271Z ##[endgroup]
+2025-05-30T19:12:48.5981567Z [command]/usr/bin/docker buildx build --iidfile /home/runner/work/_temp/docker-actions-toolkit-tMWOjt/build-iidfile-7ec0df0707.txt --attest type=provenance,mode=max,builder-id=https://github.com/cimtdev/cimt-v1/actions/runs/15353981361 --tag ***/cimt-chat:latest --metadata-file /home/runner/work/_temp/docker-actions-toolkit-tMWOjt/build-metadata-2125cf3f5f.json --push .
+2025-05-30T19:12:48.8862396Z #0 building with "builder-9fa6758c-edfb-41f8-b15b-836edfe7b000" instance using docker-container driver
+2025-05-30T19:12:48.8862946Z 
+2025-05-30T19:12:48.8863103Z #1 [internal] load build definition from Dockerfile
+2025-05-30T19:12:48.8863827Z #1 transferring dockerfile: 519B done
+2025-05-30T19:12:48.8864124Z #1 DONE 0.0s
+2025-05-30T19:12:48.8864251Z 
+2025-05-30T19:12:48.8864447Z #2 [auth] library/python:pull token for registry-1.docker.io
+2025-05-30T19:12:48.8864827Z #2 DONE 0.0s
+2025-05-30T19:12:48.8864958Z 
+2025-05-30T19:12:48.8865182Z #3 [internal] load metadata for docker.io/library/python:3.11-slim
+2025-05-30T19:12:48.9870356Z #3 DONE 0.3s
+2025-05-30T19:12:49.1801304Z 
+2025-05-30T19:12:49.1802030Z #4 [internal] load .dockerignore
+2025-05-30T19:12:49.1803118Z #4 transferring context: 34B done
+2025-05-30T19:12:49.1806182Z #4 DONE 0.0s
+2025-05-30T19:12:49.1806656Z 
+2025-05-30T19:12:49.1807079Z #5 [internal] load build context
+2025-05-30T19:12:49.1807852Z #5 transferring context: 71.55kB 0.0s done
+2025-05-30T19:12:49.1808613Z #5 DONE 0.0s
+2025-05-30T19:12:49.1809978Z 
+2025-05-30T19:12:49.1810607Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:dbf1de478a55d6763afaa39c2f3d7b54b25230614980276de5cacdde79529d0c
+2025-05-30T19:12:49.1811959Z #6 resolve docker.io/library/python:3.11-slim@sha256:dbf1de478a55d6763afaa39c2f3d7b54b25230614980276de5cacdde79529d0c done
+2025-05-30T19:12:49.1813128Z #6 sha256:09c4893e5320a7c59acf82e87a07980214c1a955ef9f60cb9d0a48ba562c315a 250B / 250B 0.0s done
+2025-05-30T19:12:49.1814239Z #6 sha256:fa70febde0f65a8b721a3ff8c13b09826c281b025abd1a92b4b08eb839b7cbd1 3.51MB / 3.51MB 0.1s done
+2025-05-30T19:12:49.3576944Z #6 sha256:9d545c45fb8c5b23b5b88114aeeefb48a96eface42af73e95458458524082e2d 16.21MB / 16.21MB 0.2s done
+2025-05-30T19:12:49.3577840Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 24.12MB / 28.23MB 0.3s
+2025-05-30T19:12:49.5755816Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 28.23MB / 28.23MB 0.4s done
+2025-05-30T19:12:49.5756723Z #6 extracting sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62
+2025-05-30T19:12:50.1408388Z #6 extracting sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 0.7s done
+2025-05-30T19:12:50.1409180Z #6 DONE 1.1s
+2025-05-30T19:12:50.3830892Z 
+2025-05-30T19:12:50.3832728Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:dbf1de478a55d6763afaa39c2f3d7b54b25230614980276de5cacdde79529d0c
+2025-05-30T19:12:50.3833830Z #6 extracting sha256:fa70febde0f65a8b721a3ff8c13b09826c281b025abd1a92b4b08eb839b7cbd1 0.1s done
+2025-05-30T19:12:50.3834863Z #6 extracting sha256:9d545c45fb8c5b23b5b88114aeeefb48a96eface42af73e95458458524082e2d
+2025-05-30T19:12:50.6917263Z #6 extracting sha256:9d545c45fb8c5b23b5b88114aeeefb48a96eface42af73e95458458524082e2d 0.5s done
+2025-05-30T19:12:50.6918214Z #6 DONE 1.7s
+2025-05-30T19:12:50.8496340Z 
+2025-05-30T19:12:50.8497233Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:dbf1de478a55d6763afaa39c2f3d7b54b25230614980276de5cacdde79529d0c
+2025-05-30T19:12:50.8497957Z #6 extracting sha256:09c4893e5320a7c59acf82e87a07980214c1a955ef9f60cb9d0a48ba562c315a done
+2025-05-30T19:12:50.8498367Z #6 DONE 1.7s
+2025-05-30T19:12:50.8498480Z 
+2025-05-30T19:12:50.8498582Z #7 [2/5] WORKDIR /app
+2025-05-30T19:12:50.8614620Z #7 DONE 0.2s
+2025-05-30T19:12:51.0233019Z 
+2025-05-30T19:12:51.0233733Z #8 [3/5] COPY requirements.txt ./
+2025-05-30T19:12:51.0234166Z #8 DONE 0.0s
+2025-05-30T19:12:51.0234344Z 
+2025-05-30T19:12:51.0234628Z #9 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+2025-05-30T19:12:52.4070977Z #9 1.534 Collecting docling (from -r requirements.txt (line 1))
+2025-05-30T19:12:52.5946718Z #9 1.571   Downloading docling-2.34.0-py3-none-any.whl.metadata (10 kB)
+2025-05-30T19:12:52.6224657Z #9 1.750 Collecting PyMuPDF (from -r requirements.txt (line 2))
+2025-05-30T19:12:52.7380208Z #9 1.754   Downloading pymupdf-1.26.0-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.4 kB)
+2025-05-30T19:12:52.7381220Z #9 1.788 Collecting tiktoken (from -r requirements.txt (line 3))
+2025-05-30T19:12:52.7382132Z #9 1.792   Downloading tiktoken-0.9.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+2025-05-30T19:12:52.7383051Z #9 1.865 Collecting openai==0.28 (from -r requirements.txt (line 4))
+2025-05-30T19:12:52.8540011Z #9 1.869   Downloading openai-0.28.0-py3-none-any.whl.metadata (13 kB)
+2025-05-30T19:12:52.8541376Z #9 1.887 Collecting python-dotenv (from -r requirements.txt (line 5))
+2025-05-30T19:12:52.8542326Z #9 1.891   Downloading python_dotenv-1.1.0-py3-none-any.whl.metadata (24 kB)
+2025-05-30T19:12:52.8542925Z #9 1.922 Collecting supabase (from -r requirements.txt (line 6))
+2025-05-30T19:12:52.8543352Z #9 1.925   Downloading supabase-2.15.2-py3-none-any.whl.metadata (11 kB)
+2025-05-30T19:12:52.8543786Z #9 1.981 Collecting streamlit (from -r requirements.txt (line 7))
+2025-05-30T19:12:53.0154937Z #9 2.005   Downloading streamlit-1.45.1-py3-none-any.whl.metadata (8.9 kB)
+2025-05-30T19:12:53.0157691Z #9 2.073 Collecting psycopg2-binary (from -r requirements.txt (line 8))
+2025-05-30T19:12:53.0158548Z #9 2.077   Downloading psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2025-05-30T19:12:53.0159414Z #9 2.143 Collecting requests>=2.20 (from openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:12:53.2286528Z #9 2.146   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+2025-05-30T19:12:53.2287134Z #9 2.198 Collecting tqdm (from openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:12:53.2287601Z #9 2.202   Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+2025-05-30T19:12:53.2288511Z #9 2.205      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 88.6 MB/s eta 0:00:00
+2025-05-30T19:12:53.5661301Z #9 2.693 Collecting aiohttp (from openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:12:53.6736387Z #9 2.697   Downloading aiohttp-3.12.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.6 kB)
+2025-05-30T19:12:53.6737555Z #9 2.749 Collecting beautifulsoup4<5.0.0,>=4.12.3 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.6738479Z #9 2.754   Downloading beautifulsoup4-4.13.4-py3-none-any.whl.metadata (3.8 kB)
+2025-05-30T19:12:53.6739392Z #9 2.775 Collecting certifi>=2024.7.4 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.6740076Z #9 2.779   Downloading certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
+2025-05-30T19:12:53.6740999Z #9 2.801 Collecting click<8.2.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.8145743Z #9 2.805   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+2025-05-30T19:12:53.8146949Z #9 2.846 Collecting docling-core<3.0.0,>=2.29.0 (from docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.8147796Z #9 2.852   Downloading docling_core-2.32.0-py3-none-any.whl.metadata (6.0 kB)
+2025-05-30T19:12:53.8148466Z #9 2.877 Collecting docling-ibm-models<4.0.0,>=3.4.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.8149085Z #9 2.882   Downloading docling_ibm_models-3.4.3-py3-none-any.whl.metadata (7.6 kB)
+2025-05-30T19:12:53.8149768Z #9 2.942 Collecting docling-parse<5.0.0,>=4.0.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.9389473Z #9 2.947   Downloading docling_parse-4.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+2025-05-30T19:12:53.9390981Z #9 2.961 Collecting easyocr<2.0,>=1.7 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.9391918Z #9 2.965   Downloading easyocr-1.7.2-py3-none-any.whl.metadata (10 kB)
+2025-05-30T19:12:53.9392700Z #9 2.978 Collecting filetype<2.0.0,>=1.2.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:53.9393512Z #9 3.009   Downloading filetype-1.2.0-py2.py3-none-any.whl.metadata (6.5 kB)
+2025-05-30T19:12:53.9394199Z #9 3.066 Collecting huggingface_hub<1,>=0.23 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.0934039Z #9 3.070   Downloading huggingface_hub-0.32.3-py3-none-any.whl.metadata (14 kB)
+2025-05-30T19:12:54.1779682Z #9 3.305 Collecting lxml<6.0.0,>=4.0.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.3467044Z #9 3.309   Downloading lxml-5.4.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+2025-05-30T19:12:54.3469302Z #9 3.334 Collecting marko<3.0.0,>=2.1.2 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.3470093Z #9 3.337   Downloading marko-2.1.3-py3-none-any.whl.metadata (4.5 kB)
+2025-05-30T19:12:54.3470877Z #9 3.359 Collecting openpyxl<4.0.0,>=3.1.5 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.3471685Z #9 3.363   Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+2025-05-30T19:12:54.3472447Z #9 3.474 Collecting pandas<3.0.0,>=2.1.4 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.5043955Z #9 3.478   Downloading pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+2025-05-30T19:12:54.5045320Z #9 3.481      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 262.6 MB/s eta 0:00:00
+2025-05-30T19:12:54.5359041Z #9 3.663 Collecting pillow<12.0.0,>=10.0.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.7125594Z #9 3.667   Downloading pillow-11.2.1-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (8.9 kB)
+2025-05-30T19:12:54.7126715Z #9 3.686 Collecting pluggy<2.0.0,>=1.0.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.7127451Z #9 3.689   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2025-05-30T19:12:54.7486366Z #9 3.876 Collecting pydantic<3.0.0,>=2.0.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.9681378Z #9 3.880   Downloading pydantic-2.11.5-py3-none-any.whl.metadata (67 kB)
+2025-05-30T19:12:54.9682574Z #9 3.882      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.2/67.2 kB 197.7 MB/s eta 0:00:00
+2025-05-30T19:12:54.9683417Z #9 3.903 Collecting pydantic-settings<3.0.0,>=2.3.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.9684402Z #9 3.907   Downloading pydantic_settings-2.9.1-py3-none-any.whl.metadata (3.8 kB)
+2025-05-30T19:12:54.9685319Z #9 3.923 Collecting pylatexenc<3.0,>=2.10 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:54.9686294Z #9 3.929   Downloading pylatexenc-2.10.tar.gz (162 kB)
+2025-05-30T19:12:54.9687131Z #9 3.931      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.6/162.6 kB 306.8 MB/s eta 0:00:00
+2025-05-30T19:12:54.9687712Z #9 3.945   Preparing metadata (setup.py): started
+2025-05-30T19:12:55.2512573Z #9 4.378   Preparing metadata (setup.py): finished with status 'done'
+2025-05-30T19:12:55.3523561Z #9 4.474 Collecting pypdfium2<5.0.0,>=4.30.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:55.3524488Z #9 4.478   Downloading pypdfium2-4.30.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (48 kB)
+2025-05-30T19:12:55.5356829Z #9 4.480      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 kB 274.3 MB/s eta 0:00:00
+2025-05-30T19:12:55.5357770Z #9 4.495 Collecting python-docx<2.0.0,>=1.1.2 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:55.5358601Z #9 4.499   Downloading python_docx-1.1.2-py3-none-any.whl.metadata (2.0 kB)
+2025-05-30T19:12:55.5359415Z #9 4.513 Collecting python-pptx<2.0.0,>=1.0.2 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:55.5359961Z #9 4.516   Downloading python_pptx-1.0.2-py3-none-any.whl.metadata (2.5 kB)
+2025-05-30T19:12:55.5360430Z #9 4.545 Collecting rtree<2.0.0,>=1.3.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:55.5360998Z #9 4.550   Downloading rtree-1.4.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.1 kB)
+2025-05-30T19:12:55.5361544Z #9 4.663 Collecting scipy<2.0.0,>=1.6.0 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:55.7393599Z #9 4.667   Downloading scipy-1.15.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+2025-05-30T19:12:55.7394967Z #9 4.669      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 198.7 MB/s eta 0:00:00
+2025-05-30T19:12:55.7396016Z #9 4.712 Collecting typer<0.16.0,>=0.12.5 (from docling->-r requirements.txt (line 1))
+2025-05-30T19:12:55.7396849Z #9 4.716   Downloading typer-0.15.4-py3-none-any.whl.metadata (15 kB)
+2025-05-30T19:12:55.9859745Z #9 5.113 Collecting regex>=2022.1.18 (from tiktoken->-r requirements.txt (line 3))
+2025-05-30T19:12:56.0965314Z #9 5.117   Downloading regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (40 kB)
+2025-05-30T19:12:56.0966830Z #9 5.119      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 252.2 MB/s eta 0:00:00
+2025-05-30T19:12:56.0967552Z #9 5.161 Collecting gotrue<3.0.0,>=2.11.0 (from supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:56.0968370Z #9 5.165   Downloading gotrue-2.12.0-py3-none-any.whl.metadata (6.1 kB)
+2025-05-30T19:12:56.0969201Z #9 5.198 Collecting httpx<0.29,>=0.26 (from supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:56.0969840Z #9 5.201   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-05-30T19:12:56.0970562Z #9 5.224 Collecting postgrest<1.1,>0.19 (from supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:56.2021649Z #9 5.227   Downloading postgrest-1.0.2-py3-none-any.whl.metadata (3.5 kB)
+2025-05-30T19:12:56.2022636Z #9 5.244 Collecting realtime<2.5.0,>=2.4.0 (from supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:56.2023598Z #9 5.248   Downloading realtime-2.4.3-py3-none-any.whl.metadata (6.7 kB)
+2025-05-30T19:12:56.2024259Z #9 5.269 Collecting storage3<0.12,>=0.10 (from supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:56.2024894Z #9 5.272   Downloading storage3-0.11.3-py3-none-any.whl.metadata (1.8 kB)
+2025-05-30T19:12:56.2025405Z #9 5.290 Collecting supafunc<0.10,>=0.9 (from supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:56.2026198Z #9 5.294   Downloading supafunc-0.9.4-py3-none-any.whl.metadata (1.2 kB)
+2025-05-30T19:12:56.2026783Z #9 5.329 Collecting altair<6,>=4.0 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.4059156Z #9 5.333   Downloading altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+2025-05-30T19:12:56.4060118Z #9 5.355 Collecting blinker<2,>=1.5.0 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.4060977Z #9 5.359   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2025-05-30T19:12:56.4061870Z #9 5.379 Collecting cachetools<6,>=4.0 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.4062749Z #9 5.382   Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+2025-05-30T19:12:56.4429222Z #9 5.570 Collecting numpy<3,>=1.23 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.6371891Z #9 5.574   Downloading numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+2025-05-30T19:12:56.6372907Z #9 5.576      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 213.3 MB/s eta 0:00:00
+2025-05-30T19:12:56.6373375Z #9 5.610 Collecting packaging<25,>=20 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.6373891Z #9 5.614   Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-05-30T19:12:56.6712614Z #9 5.799 Collecting protobuf<7,>=3.20 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.8780810Z #9 5.803   Downloading protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+2025-05-30T19:12:56.8782187Z #9 5.885 Collecting pyarrow>=7.0 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.8782837Z #9 5.889   Downloading pyarrow-20.0.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+2025-05-30T19:12:56.8783381Z #9 6.005 Collecting tenacity<10,>=8.1.0 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.9786320Z #9 6.009   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+2025-05-30T19:12:56.9787418Z #9 6.023 Collecting toml<2,>=0.10.1 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.9788090Z #9 6.027   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+2025-05-30T19:12:56.9788669Z #9 6.048 Collecting typing-extensions<5,>=4.4.0 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:56.9789250Z #9 6.051   Downloading typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
+2025-05-30T19:12:56.9789839Z #9 6.106 Collecting watchdog<7,>=2.1.5 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.0908331Z #9 6.110   Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+2025-05-30T19:12:57.0909548Z #9 6.112      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 208.3 MB/s eta 0:00:00
+2025-05-30T19:12:57.0910407Z #9 6.151 Collecting gitpython!=3.1.19,<4,>=3.0.7 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.0911253Z #9 6.155   Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+2025-05-30T19:12:57.0912094Z #9 6.175 Collecting pydeck<1,>=0.8.0b4 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.0912836Z #9 6.179   Downloading pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)
+2025-05-30T19:12:57.0913614Z #9 6.218 Collecting tornado<7,>=6.0.3 (from streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.2351910Z #9 6.222   Downloading tornado-6.5.1-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.8 kB)
+2025-05-30T19:12:57.2353508Z #9 6.265 Collecting jinja2 (from altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.2354378Z #9 6.269   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2025-05-30T19:12:57.2354951Z #9 6.301 Collecting jsonschema>=3.0 (from altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.2355772Z #9 6.305   Downloading jsonschema-4.24.0-py3-none-any.whl.metadata (7.8 kB)
+2025-05-30T19:12:57.2356504Z #9 6.362 Collecting narwhals>=1.14.2 (from altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:57.3765104Z #9 6.366   Downloading narwhals-1.41.0-py3-none-any.whl.metadata (11 kB)
+2025-05-30T19:12:57.3767472Z #9 6.395 Collecting soupsieve>1.2 (from beautifulsoup4<5.0.0,>=4.12.3->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.3768429Z #9 6.401   Downloading soupsieve-2.7-py3-none-any.whl.metadata (4.6 kB)
+2025-05-30T19:12:57.3769167Z #9 6.435 Collecting jsonref<2.0.0,>=1.1.0 (from docling-core<3.0.0,>=2.29.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.3769837Z #9 6.439   Downloading jsonref-1.1.0-py3-none-any.whl.metadata (2.7 kB)
+2025-05-30T19:12:57.3770776Z #9 6.504 Collecting latex2mathml<4.0.0,>=3.77.0 (from docling-core<3.0.0,>=2.29.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.4946948Z #9 6.509   Downloading latex2mathml-3.78.0-py3-none-any.whl.metadata (14 kB)
+2025-05-30T19:12:57.4948484Z #9 6.567 Collecting pyyaml<7.0.0,>=5.1 (from docling-core<3.0.0,>=2.29.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.4949869Z #9 6.571   Downloading PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+2025-05-30T19:12:57.4950687Z #9 6.584 Collecting tabulate<0.10.0,>=0.9.0 (from docling-core<3.0.0,>=2.29.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.4951351Z #9 6.588   Downloading tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
+2025-05-30T19:12:57.4952056Z #9 6.622 Collecting semchunk<3.0.0,>=2.2.0 (from docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.5992007Z #9 6.627   Downloading semchunk-2.2.2-py3-none-any.whl.metadata (10 kB)
+2025-05-30T19:12:57.5993841Z #9 6.684 Collecting transformers<5.0.0,>=4.34.0 (from docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.5994973Z #9 6.688   Downloading transformers-4.52.4-py3-none-any.whl.metadata (38 kB)
+2025-05-30T19:12:57.5996335Z #9 6.722 Collecting jsonlines<4.0.0,>=3.1.0 (from docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.5997376Z #9 6.727   Downloading jsonlines-3.1.0-py3-none-any.whl.metadata (1.7 kB)
+2025-05-30T19:12:57.7935836Z #9 6.799 Collecting opencv-python-headless<5.0.0.0,>=4.6.0.66 (from docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.7937306Z #9 6.804   Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+2025-05-30T19:12:57.7939143Z #9 6.921 Collecting safetensors<1,>=0.4.3 (from safetensors[torch]<1,>=0.4.3->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.8942798Z #9 6.925   Downloading safetensors-0.5.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
+2025-05-30T19:12:57.8944018Z #9 6.969 Collecting torch<3.0.0,>=2.2.2 (from docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.8945008Z #9 6.972   Downloading torch-2.7.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (29 kB)
+2025-05-30T19:12:57.8946189Z #9 7.021 Collecting torchvision<1,>=0 (from docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:57.9996074Z #9 7.026   Downloading torchvision-0.22.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+2025-05-30T19:12:57.9997793Z #9 7.127 Collecting scikit-image (from easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.1564681Z #9 7.131   Downloading scikit_image-0.25.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
+2025-05-30T19:12:58.1566038Z #9 7.192 Collecting python-bidi (from easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.1567089Z #9 7.197   Downloading python_bidi-0.6.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2025-05-30T19:12:58.1568092Z #9 7.284 Collecting Shapely (from easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.3051539Z #9 7.288   Downloading shapely-2.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+2025-05-30T19:12:58.3052719Z #9 7.432 Collecting pyclipper (from easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.4282713Z #9 7.440   Downloading pyclipper-1.3.0.post6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.0 kB)
+2025-05-30T19:12:58.4283857Z #9 7.472 Collecting ninja (from easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.4285293Z #9 7.476   Downloading ninja-1.11.1.4-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.0 kB)
+2025-05-30T19:12:58.4286255Z #9 7.506 Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:12:58.4286798Z #9 7.510   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+2025-05-30T19:12:58.4287337Z #9 7.555 Collecting pyjwt<3.0.0,>=2.10.1 (from gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:58.5322656Z #9 7.560   Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+2025-05-30T19:12:58.5323899Z #9 7.589 Collecting pytest-mock<4.0.0,>=3.14.0 (from gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:58.5325020Z #9 7.594   Downloading pytest_mock-3.14.1-py3-none-any.whl.metadata (3.9 kB)
+2025-05-30T19:12:58.5326101Z #9 7.628 Collecting anyio (from httpx<0.29,>=0.26->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:58.5326781Z #9 7.634   Downloading anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+2025-05-30T19:12:58.5327458Z #9 7.659 Collecting httpcore==1.* (from httpx<0.29,>=0.26->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:58.6730368Z #9 7.664   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2025-05-30T19:12:58.6731211Z #9 7.680 Collecting idna (from httpx<0.29,>=0.26->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:58.6731815Z #9 7.684   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+2025-05-30T19:12:58.6732510Z #9 7.703 Collecting h11>=0.16 (from httpcore==1.*->httpx<0.29,>=0.26->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:58.6733197Z #9 7.707   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2025-05-30T19:12:58.6733796Z #9 7.800 Collecting filelock (from huggingface_hub<1,>=0.23->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.7878269Z #9 7.804   Downloading filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+2025-05-30T19:12:58.7879300Z #9 7.833 Collecting fsspec>=2023.5.0 (from huggingface_hub<1,>=0.23->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.7880400Z #9 7.837   Downloading fsspec-2025.5.1-py3-none-any.whl.metadata (11 kB)
+2025-05-30T19:12:58.7881358Z #9 7.879 Collecting hf-xet<2.0.0,>=1.1.2 (from huggingface_hub<1,>=0.23->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.7882445Z #9 7.883   Downloading hf_xet-1.1.2-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (879 bytes)
+2025-05-30T19:12:58.7883076Z #9 7.915 Collecting et-xmlfile (from openpyxl<4.0.0,>=3.1.5->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.9214271Z #9 7.919   Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+2025-05-30T19:12:58.9215206Z #9 8.000 Collecting python-dateutil>=2.8.2 (from pandas<3.0.0,>=2.1.4->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:58.9216259Z #9 8.003   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-05-30T19:12:58.9217044Z #9 8.049 Collecting pytz>=2020.1 (from pandas<3.0.0,>=2.1.4->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:59.0518668Z #9 8.052   Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+2025-05-30T19:12:59.0519634Z #9 8.070 Collecting tzdata>=2022.7 (from pandas<3.0.0,>=2.1.4->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:59.0520519Z #9 8.074   Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+2025-05-30T19:12:59.0521539Z #9 8.116 Collecting deprecation<3.0.0,>=2.1.0 (from postgrest<1.1,>0.19->supabase->-r requirements.txt (line 6))
+2025-05-30T19:12:59.0522302Z #9 8.120   Downloading deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)
+2025-05-30T19:12:59.0523036Z #9 8.179 Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.0.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:59.2061976Z #9 8.183   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2025-05-30T19:12:59.6468566Z #9 8.774 Collecting pydantic-core==2.33.2 (from pydantic<3.0.0,>=2.0.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:59.8194743Z #9 8.780   Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+2025-05-30T19:12:59.8195553Z #9 8.792 Collecting typing-inspection>=0.4.0 (from pydantic<3.0.0,>=2.0.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:12:59.8196604Z #9 8.796   Downloading typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+2025-05-30T19:12:59.9604877Z #9 9.088 Collecting XlsxWriter>=0.5.7 (from python-pptx<2.0.0,>=1.0.2->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:00.0891772Z #9 9.091   Downloading XlsxWriter-3.2.3-py3-none-any.whl.metadata (2.7 kB)
+2025-05-30T19:13:00.0892799Z #9 9.216 Collecting websockets<15,>=11 (from realtime<2.5.0,>=2.4.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:00.2290683Z #9 9.220   Downloading websockets-14.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+2025-05-30T19:13:00.2292025Z #9 9.256 Collecting aiohappyeyeballs>=2.5.0 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.2293012Z #9 9.261   Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+2025-05-30T19:13:00.2293972Z #9 9.273 Collecting aiosignal>=1.1.2 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.2294689Z #9 9.276   Downloading aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+2025-05-30T19:13:00.2295199Z #9 9.296 Collecting attrs>=17.3.0 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.2295903Z #9 9.300   Downloading attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+2025-05-30T19:13:00.2296410Z #9 9.356 Collecting frozenlist>=1.1.1 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.3845008Z #9 9.361   Downloading frozenlist-1.6.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (16 kB)
+2025-05-30T19:13:00.4313437Z #9 9.559 Collecting multidict<7.0,>=4.5 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.6366931Z #9 9.563   Downloading multidict-6.4.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.3 kB)
+2025-05-30T19:13:00.6368030Z #9 9.609 Collecting propcache>=0.2.0 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.6369072Z #9 9.613   Downloading propcache-0.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+2025-05-30T19:13:00.7385005Z #9 9.866 Collecting yarl<2.0,>=1.17.0 (from aiohttp->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.8480514Z #9 9.871   Downloading yarl-1.20.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (72 kB)
+2025-05-30T19:13:00.8481813Z #9 9.873      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.4/72.4 kB 245.6 MB/s eta 0:00:00
+2025-05-30T19:13:00.8482719Z #9 9.975 Collecting charset-normalizer<4,>=2 (from requests>=2.20->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.9829686Z #9 9.979   Downloading charset_normalizer-3.4.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+2025-05-30T19:13:00.9830624Z #9 10.03 Collecting urllib3<3,>=1.21.1 (from requests>=2.20->openai==0.28->-r requirements.txt (line 4))
+2025-05-30T19:13:00.9831266Z #9 10.03   Downloading urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+2025-05-30T19:13:00.9831902Z #9 10.11 Collecting strenum<0.5.0,>=0.4.15 (from supafunc<0.10,>=0.9->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:01.1313038Z #9 10.11   Downloading StrEnum-0.4.15-py3-none-any.whl.metadata (5.3 kB)
+2025-05-30T19:13:01.1314063Z #9 10.19 Collecting shellingham>=1.3.0 (from typer<0.16.0,>=0.12.5->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:01.1314986Z #9 10.19   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2025-05-30T19:13:01.1316160Z #9 10.26 Collecting rich>=10.11.0 (from typer<0.16.0,>=0.12.5->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:01.2860253Z #9 10.26   Downloading rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+2025-05-30T19:13:01.3399449Z #9 10.47 Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:13:01.4693980Z #9 10.47   Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+2025-05-30T19:13:01.4694996Z #9 10.52 Collecting h2<5,>=3 (from httpx[http2]<0.29,>=0.26->gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:01.4696113Z #9 10.52   Downloading h2-4.2.0-py3-none-any.whl.metadata (5.1 kB)
+2025-05-30T19:13:01.4696970Z #9 10.60 Collecting MarkupSafe>=2.0 (from jinja2->altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:13:01.5804412Z #9 10.60   Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+2025-05-30T19:13:01.5806225Z #9 10.67 Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:13:01.5807514Z #9 10.67   Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl.metadata (2.9 kB)
+2025-05-30T19:13:01.5808614Z #9 10.71 Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:13:01.7346675Z #9 10.71   Downloading referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+2025-05-30T19:13:02.0116279Z #9 11.14 Collecting rpds-py>=0.7.1 (from jsonschema>=3.0->altair<6,>=4.0->streamlit->-r requirements.txt (line 7))
+2025-05-30T19:13:02.1658651Z #9 11.14   Downloading rpds_py-0.25.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+2025-05-30T19:13:02.2314967Z #9 11.36 Collecting pytest>=6.2.5 (from pytest-mock<4.0.0,>=3.14.0->gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:02.3561845Z #9 11.36   Downloading pytest-8.3.5-py3-none-any.whl.metadata (7.6 kB)
+2025-05-30T19:13:02.3563225Z #9 11.39 Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3.0.0,>=2.1.4->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.3563986Z #9 11.40   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-05-30T19:13:02.3564580Z #9 11.45 Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer<0.16.0,>=0.12.5->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.3565288Z #9 11.46   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+2025-05-30T19:13:02.3566142Z #9 11.48 Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->typer<0.16.0,>=0.12.5->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.5746379Z #9 11.49   Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+2025-05-30T19:13:02.5747481Z #9 11.58 Collecting mpire[dill] (from semchunk<3.0.0,>=2.2.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.5748148Z #9 11.58   Downloading mpire-2.10.2-py3-none-any.whl.metadata (14 kB)
+2025-05-30T19:13:02.5748750Z #9 11.70 Collecting sympy>=1.13.3 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.6849400Z #9 11.71   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2025-05-30T19:13:02.6850228Z #9 11.73 Collecting networkx (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.6850832Z #9 11.74   Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+2025-05-30T19:13:02.6851459Z #9 11.75 Collecting nvidia-cuda-nvrtc-cu12==12.6.77 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.6852153Z #9 11.76   Downloading nvidia_cuda_nvrtc_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:02.6852846Z #9 11.77 Collecting nvidia-cuda-runtime-cu12==12.6.77 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.6853630Z #9 11.78   Downloading nvidia_cuda_runtime_cu12-12.6.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:02.6854668Z #9 11.79 Collecting nvidia-cuda-cupti-cu12==12.6.80 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.6855446Z #9 11.80   Downloading nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+2025-05-30T19:13:02.6856444Z #9 11.81 Collecting nvidia-cudnn-cu12==9.5.1.17 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.7930290Z #9 11.82   Downloading nvidia_cudnn_cu12-9.5.1.17-py3-none-manylinux_2_28_x86_64.whl.metadata (1.6 kB)
+2025-05-30T19:13:02.7931652Z #9 11.83 Collecting nvidia-cublas-cu12==12.6.4.1 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.7933081Z #9 11.83   Downloading nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:02.7934051Z #9 11.85 Collecting nvidia-cufft-cu12==11.3.0.4 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.7934802Z #9 11.85   Downloading nvidia_cufft_cu12-11.3.0.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:02.7935560Z #9 11.87 Collecting nvidia-curand-cu12==10.3.7.77 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.7936667Z #9 11.87   Downloading nvidia_curand_cu12-10.3.7.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:02.7937427Z #9 11.89 Collecting nvidia-cusolver-cu12==11.7.1.2 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.7938453Z #9 11.89   Downloading nvidia_cusolver_cu12-11.7.1.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+2025-05-30T19:13:02.7939221Z #9 11.91 Collecting nvidia-cusparse-cu12==12.5.4.2 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:02.7939969Z #9 11.91   Downloading nvidia_cusparse_cu12-12.5.4.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+2025-05-30T19:13:02.7940721Z #9 11.92 Collecting nvidia-cusparselt-cu12==0.6.3 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.0339542Z #9 11.92   Downloading nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_x86_64.whl.metadata (6.8 kB)
+2025-05-30T19:13:03.0340853Z #9 11.94 Collecting nvidia-nccl-cu12==2.26.2 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.0342216Z #9 11.94   Downloading nvidia_nccl_cu12-2.26.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.0 kB)
+2025-05-30T19:13:03.0343587Z #9 11.96 Collecting nvidia-nvtx-cu12==12.6.77 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.0344903Z #9 11.96   Downloading nvidia_nvtx_cu12-12.6.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+2025-05-30T19:13:03.0346552Z #9 11.97 Collecting nvidia-nvjitlink-cu12==12.6.85 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.0347977Z #9 11.98   Downloading nvidia_nvjitlink_cu12-12.6.85-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:03.0349379Z #9 11.99 Collecting nvidia-cufile-cu12==1.11.1.6 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.0350750Z #9 11.99   Downloading nvidia_cufile_cu12-1.11.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:03.0352119Z #9 12.01 Collecting triton==3.3.0 (from torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.0353789Z #9 12.01   Downloading triton-3.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.5 kB)
+2025-05-30T19:13:03.1034981Z #9 12.23 Requirement already satisfied: setuptools>=40.8.0 in /usr/local/lib/python3.11/site-packages (from triton==3.3.0->torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1)) (65.5.1)
+2025-05-30T19:13:03.5226547Z #9 12.65 Collecting tokenizers<0.22,>=0.21 (from transformers<5.0.0,>=4.34.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:03.6779273Z #9 12.65   Downloading tokenizers-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+2025-05-30T19:13:03.6993192Z #9 12.83 Collecting sniffio>=1.1 (from anyio->httpx<0.29,>=0.26->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:03.8540779Z #9 12.83   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-05-30T19:13:03.9055383Z #9 13.03 Collecting imageio!=2.35.0,>=2.33 (from scikit-image->easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.0676135Z #9 13.04   Downloading imageio-2.37.0-py3-none-any.whl.metadata (5.2 kB)
+2025-05-30T19:13:04.0677197Z #9 13.08 Collecting tifffile>=2022.8.12 (from scikit-image->easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.0678232Z #9 13.09   Downloading tifffile-2025.5.26-py3-none-any.whl.metadata (32 kB)
+2025-05-30T19:13:04.0679006Z #9 13.10 Collecting lazy-loader>=0.4 (from scikit-image->easyocr<2.0,>=1.7->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.0679576Z #9 13.11   Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+2025-05-30T19:13:04.0680262Z #9 13.19 Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[http2]<0.29,>=0.26->gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:04.2321965Z #9 13.20   Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+2025-05-30T19:13:04.2323476Z #9 13.21 Collecting hpack<5,>=4.1 (from h2<5,>=3->httpx[http2]<0.29,>=0.26->gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:04.2324403Z #9 13.22   Downloading hpack-4.1.0-py3-none-any.whl.metadata (4.6 kB)
+2025-05-30T19:13:04.2325204Z #9 13.36 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<0.16.0,>=0.12.5->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.3451984Z #9 13.36   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2025-05-30T19:13:04.3453408Z #9 13.47 Collecting iniconfig (from pytest>=6.2.5->pytest-mock<4.0.0,>=3.14.0->gotrue<3.0.0,>=2.11.0->supabase->-r requirements.txt (line 6))
+2025-05-30T19:13:04.4919833Z #9 13.48   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+2025-05-30T19:13:04.4921001Z #9 13.62 Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch<3.0.0,>=2.2.2->docling-ibm-models<4.0.0,>=3.4.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.6301096Z #9 13.62   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2025-05-30T19:13:04.6302386Z #9 13.76 Collecting multiprocess>=0.70.15 (from mpire[dill]->semchunk<3.0.0,>=2.2.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.7842242Z #9 13.76   Downloading multiprocess-0.70.18-py311-none-any.whl.metadata (7.5 kB)
+2025-05-30T19:13:04.7917455Z #9 13.92 Collecting dill>=0.4.0 (from multiprocess>=0.70.15->mpire[dill]->semchunk<3.0.0,>=2.2.0->docling-core[chunking]<3.0.0,>=2.29.0->docling->-r requirements.txt (line 1))
+2025-05-30T19:13:04.9372492Z #9 13.92   Downloading dill-0.4.0-py3-none-any.whl.metadata (10 kB)
+2025-05-30T19:13:04.9374100Z #9 14.06 Downloading openai-0.28.0-py3-none-any.whl (76 kB)
+2025-05-30T19:13:05.0835257Z #9 14.07    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.5/76.5 kB 174.3 MB/s eta 0:00:00
+2025-05-30T19:13:05.0836197Z #9 14.08 Downloading docling-2.34.0-py3-none-any.whl (173 kB)
+2025-05-30T19:13:05.0837033Z #9 14.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.2/173.2 kB 323.9 MB/s eta 0:00:00
+2025-05-30T19:13:05.0837930Z #9 14.09 Downloading pymupdf-1.26.0-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (24.1 MB)
+2025-05-30T19:13:05.1862986Z #9 14.21    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.1/24.1 MB 236.4 MB/s eta 0:00:00
+2025-05-30T19:13:05.1863688Z #9 14.21 Downloading tiktoken-0.9.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+2025-05-30T19:13:05.1864324Z #9 14.22    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 308.7 MB/s eta 0:00:00
+2025-05-30T19:13:05.1864726Z #9 14.22 Downloading python_dotenv-1.1.0-py3-none-any.whl (20 kB)
+2025-05-30T19:13:05.1865120Z #9 14.23 Downloading supabase-2.15.2-py3-none-any.whl (17 kB)
+2025-05-30T19:13:05.1865486Z #9 14.24 Downloading streamlit-1.45.1-py3-none-any.whl (9.9 MB)
+2025-05-30T19:13:05.1866530Z #9 14.29    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 190.6 MB/s eta 0:00:00
+2025-05-30T19:13:05.1867041Z #9 14.30 Downloading psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+2025-05-30T19:13:05.3526870Z #9 14.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 238.4 MB/s eta 0:00:00
+2025-05-30T19:13:05.3527556Z #9 14.32 Downloading altair-5.5.0-py3-none-any.whl (731 kB)
+2025-05-30T19:13:05.3528104Z #9 14.32    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.2/731.2 kB 349.9 MB/s eta 0:00:00
+2025-05-30T19:13:05.3528646Z #9 14.33 Downloading beautifulsoup4-4.13.4-py3-none-any.whl (187 kB)
+2025-05-30T19:13:05.3529200Z #9 14.33    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 187.3/187.3 kB 306.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.3529622Z #9 14.33 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-05-30T19:13:05.3530063Z #9 14.34 Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-05-30T19:13:05.3530485Z #9 14.34 Downloading certifi-2025.4.26-py3-none-any.whl (159 kB)
+2025-05-30T19:13:05.3531112Z #9 14.35    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.6/159.6 kB 320.0 MB/s eta 0:00:00
+2025-05-30T19:13:05.3531537Z #9 14.35 Downloading click-8.1.8-py3-none-any.whl (98 kB)
+2025-05-30T19:13:05.3532087Z #9 14.35    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.2/98.2 kB 246.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.3532488Z #9 14.36 Downloading docling_core-2.32.0-py3-none-any.whl (143 kB)
+2025-05-30T19:13:05.3533015Z #9 14.36    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.7/143.7 kB 315.0 MB/s eta 0:00:00
+2025-05-30T19:13:05.3533496Z #9 14.37 Downloading docling_ibm_models-3.4.3-py3-none-any.whl (80 kB)
+2025-05-30T19:13:05.3533956Z #9 14.37    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 164.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.3534572Z #9 14.38 Downloading docling_parse-4.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.1 MB)
+2025-05-30T19:13:05.4915149Z #9 14.48    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.1/15.1 MB 174.5 MB/s eta 0:00:00
+2025-05-30T19:13:05.4916190Z #9 14.49 Downloading easyocr-1.7.2-py3-none-any.whl (2.9 MB)
+2025-05-30T19:13:05.4917027Z #9 14.50    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 305.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.4918027Z #9 14.50 Downloading filetype-1.2.0-py2.py3-none-any.whl (19 kB)
+2025-05-30T19:13:05.4918482Z #9 14.51 Downloading GitPython-3.1.44-py3-none-any.whl (207 kB)
+2025-05-30T19:13:05.4919136Z #9 14.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.6/207.6 kB 293.1 MB/s eta 0:00:00
+2025-05-30T19:13:05.4919534Z #9 14.51 Downloading gotrue-2.12.0-py3-none-any.whl (43 kB)
+2025-05-30T19:13:05.4920067Z #9 14.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 264.1 MB/s eta 0:00:00
+2025-05-30T19:13:05.4920483Z #9 14.52 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-05-30T19:13:05.4920940Z #9 14.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 280.7 MB/s eta 0:00:00
+2025-05-30T19:13:05.4921394Z #9 14.52 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2025-05-30T19:13:05.4922189Z #9 14.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 238.2 MB/s eta 0:00:00
+2025-05-30T19:13:05.4922597Z #9 14.53 Downloading huggingface_hub-0.32.3-py3-none-any.whl (512 kB)
+2025-05-30T19:13:05.4923195Z #9 14.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 512.1/512.1 kB 304.9 MB/s eta 0:00:00
+2025-05-30T19:13:05.4923593Z #9 14.54 Downloading lxml-5.4.0-cp311-cp311-manylinux_2_28_x86_64.whl (4.9 MB)
+2025-05-30T19:13:05.4924180Z #9 14.55    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 337.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.4924517Z #9 14.56 Downloading marko-2.1.3-py3-none-any.whl (42 kB)
+2025-05-30T19:13:05.4925038Z #9 14.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 kB 221.0 MB/s eta 0:00:00
+2025-05-30T19:13:05.4925795Z #9 14.57 Downloading numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+2025-05-30T19:13:05.5963660Z #9 14.62    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 336.7 MB/s eta 0:00:00
+2025-05-30T19:13:05.5964479Z #9 14.62 Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+2025-05-30T19:13:05.5965299Z #9 14.63    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.9/250.9 kB 331.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.5966176Z #9 14.63 Downloading packaging-24.2-py3-none-any.whl (65 kB)
+2025-05-30T19:13:05.5966948Z #9 14.63    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 289.6 MB/s eta 0:00:00
+2025-05-30T19:13:05.5967606Z #9 14.63 Downloading pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+2025-05-30T19:13:05.5968294Z #9 14.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 261.0 MB/s eta 0:00:00
+2025-05-30T19:13:05.5968783Z #9 14.69 Downloading pillow-11.2.1-cp311-cp311-manylinux_2_28_x86_64.whl (4.6 MB)
+2025-05-30T19:13:05.5969267Z #9 14.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 305.6 MB/s eta 0:00:00
+2025-05-30T19:13:05.5969614Z #9 14.72 Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2025-05-30T19:13:05.5969987Z #9 14.72 Downloading postgrest-1.0.2-py3-none-any.whl (22 kB)
+2025-05-30T19:13:05.7384507Z #9 14.73 Downloading protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl (321 kB)
+2025-05-30T19:13:05.7386385Z #9 14.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 321.1/321.1 kB 345.8 MB/s eta 0:00:00
+2025-05-30T19:13:05.7387151Z #9 14.73 Downloading pyarrow-20.0.0-cp311-cp311-manylinux_2_28_x86_64.whl (42.3 MB)
+2025-05-30T19:13:05.8459489Z #9 14.87    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 MB 360.3 MB/s eta 0:00:00
+2025-05-30T19:13:05.8459948Z #9 14.87 Downloading pydantic-2.11.5-py3-none-any.whl (444 kB)
+2025-05-30T19:13:05.8460425Z #9 14.87    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 444.2/444.2 kB 329.7 MB/s eta 0:00:00
+2025-05-30T19:13:05.8460968Z #9 14.88 Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+2025-05-30T19:13:05.8461577Z #9 14.89    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 292.6 MB/s eta 0:00:00
+2025-05-30T19:13:05.8461992Z #9 14.89 Downloading pydantic_settings-2.9.1-py3-none-any.whl (44 kB)
+2025-05-30T19:13:05.8462772Z #9 14.89    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.4/44.4 kB 229.3 MB/s eta 0:00:00
+2025-05-30T19:13:05.8463168Z #9 14.90 Downloading pydeck-0.9.1-py2.py3-none-any.whl (6.9 MB)
+2025-05-30T19:13:05.8463624Z #9 14.92    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 296.1 MB/s eta 0:00:00
+2025-05-30T19:13:05.8464125Z #9 14.93 Downloading pypdfium2-4.30.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.9 MB)
+2025-05-30T19:13:05.8464697Z #9 14.94    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 220.3 MB/s eta 0:00:00
+2025-05-30T19:13:05.8465069Z #9 14.95 Downloading python_docx-1.1.2-py3-none-any.whl (244 kB)
+2025-05-30T19:13:05.8465562Z #9 14.95    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 244.3/244.3 kB 341.7 MB/s eta 0:00:00
+2025-05-30T19:13:05.8466241Z #9 14.95 Downloading python_pptx-1.0.2-py3-none-any.whl (472 kB)
+2025-05-30T19:13:05.8466811Z #9 14.96    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.8/472.8 kB 200.2 MB/s eta 0:00:00
+2025-05-30T19:13:05.8467212Z #9 14.96 Downloading realtime-2.4.3-py3-none-any.whl (22 kB)
+2025-05-30T19:13:06.0232290Z #9 14.97 Downloading aiohttp-3.12.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+2025-05-30T19:13:06.0233344Z #9 14.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 286.5 MB/s eta 0:00:00
+2025-05-30T19:13:06.0233932Z #9 14.98 Downloading regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (792 kB)
+2025-05-30T19:13:06.0234579Z #9 14.98    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 792.7/792.7 kB 235.9 MB/s eta 0:00:00
+2025-05-30T19:13:06.0235059Z #9 14.99 Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2025-05-30T19:13:06.0235802Z #9 14.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 282.6 MB/s eta 0:00:00
+2025-05-30T19:13:06.0236413Z #9 15.00 Downloading rtree-1.4.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (541 kB)
+2025-05-30T19:13:06.0237023Z #9 15.00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 541.1/541.1 kB 286.3 MB/s eta 0:00:00
+2025-05-30T19:13:06.0237616Z #9 15.00 Downloading scipy-1.15.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+2025-05-30T19:13:06.1381688Z #9 15.15    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 323.8 MB/s eta 0:00:00
+2025-05-30T19:13:06.1382526Z #9 15.15 Downloading storage3-0.11.3-py3-none-any.whl (17 kB)
+2025-05-30T19:13:06.1383145Z #9 15.16 Downloading supafunc-0.9.4-py3-none-any.whl (7.8 kB)
+2025-05-30T19:13:06.1383743Z #9 15.16 Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+2025-05-30T19:13:06.1384221Z #9 15.16 Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2025-05-30T19:13:06.1384822Z #9 15.17 Downloading tornado-6.5.1-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (443 kB)
+2025-05-30T19:13:06.1385511Z #9 15.17    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 443.3/443.3 kB 313.3 MB/s eta 0:00:00
+2025-05-30T19:13:06.1386200Z #9 15.18 Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-05-30T19:13:06.1386676Z #9 15.18    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 231.9 MB/s eta 0:00:00
+2025-05-30T19:13:06.1387105Z #9 15.18 Downloading typer-0.15.4-py3-none-any.whl (45 kB)
+2025-05-30T19:13:06.1387591Z #9 15.18    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.3/45.3 kB 207.9 MB/s eta 0:00:00
+2025-05-30T19:13:06.1388013Z #9 15.19 Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+2025-05-30T19:13:06.1388601Z #9 15.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 kB 262.8 MB/s eta 0:00:00
+2025-05-30T19:13:06.1389004Z #9 15.19 Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+2025-05-30T19:13:06.1389591Z #9 15.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.1/79.1 kB 235.3 MB/s eta 0:00:00
+2025-05-30T19:13:06.1390028Z #9 15.20 Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+2025-05-30T19:13:06.1390478Z #9 15.20 Downloading aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+2025-05-30T19:13:06.1390964Z #9 15.21 Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-05-30T19:13:06.1391563Z #9 15.21 Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+2025-05-30T19:13:06.1392093Z #9 15.21    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 235.1 MB/s eta 0:00:00
+2025-05-30T19:13:06.1392705Z #9 15.21 Downloading charset_normalizer-3.4.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (147 kB)
+2025-05-30T19:13:06.1393397Z #9 15.22    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.3/147.3 kB 311.4 MB/s eta 0:00:00
+2025-05-30T19:13:06.1393765Z #9 15.22 Downloading deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+2025-05-30T19:13:06.1394494Z #9 15.23 Downloading frozenlist-1.6.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (313 kB)
+2025-05-30T19:13:06.1395257Z #9 15.23    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.6/313.6 kB 336.8 MB/s eta 0:00:00
+2025-05-30T19:13:06.1395772Z #9 15.23 Downloading fsspec-2025.5.1-py3-none-any.whl (199 kB)
+2025-05-30T19:13:06.1396308Z #9 15.24    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.1/199.1 kB 275.7 MB/s eta 0:00:00
+2025-05-30T19:13:06.1396735Z #9 15.24 Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+2025-05-30T19:13:06.1397305Z #9 15.24    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 246.0 MB/s eta 0:00:00
+2025-05-30T19:13:06.1397874Z #9 15.25 Downloading hf_xet-1.1.2-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.2 MB)
+2025-05-30T19:13:06.3398097Z #9 15.27    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 299.9 MB/s eta 0:00:00
+2025-05-30T19:13:06.3398762Z #9 15.27 Downloading idna-3.10-py3-none-any.whl (70 kB)
+2025-05-30T19:13:06.3399527Z #9 15.27    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 282.0 MB/s eta 0:00:00
+2025-05-30T19:13:06.3400164Z #9 15.28 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2025-05-30T19:13:06.3400990Z #9 15.28    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 325.2 MB/s eta 0:00:00
+2025-05-30T19:13:06.3401653Z #9 15.28 Downloading jsonlines-3.1.0-py3-none-any.whl (8.6 kB)
+2025-05-30T19:13:06.3402481Z #9 15.29 Downloading jsonref-1.1.0-py3-none-any.whl (9.4 kB)
+2025-05-30T19:13:06.3403099Z #9 15.29 Downloading jsonschema-4.24.0-py3-none-any.whl (88 kB)
+2025-05-30T19:13:06.3403935Z #9 15.29    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.7/88.7 kB 292.1 MB/s eta 0:00:00
+2025-05-30T19:13:06.3404636Z #9 15.30 Downloading latex2mathml-3.78.0-py3-none-any.whl (73 kB)
+2025-05-30T19:13:06.3405496Z #9 15.30    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 226.4 MB/s eta 0:00:00
+2025-05-30T19:13:06.3406645Z #9 15.30 Downloading multidict-6.4.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (223 kB)
+2025-05-30T19:13:06.3407756Z #9 15.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.7/223.7 kB 325.1 MB/s eta 0:00:00
+2025-05-30T19:13:06.3408498Z #9 15.31 Downloading narwhals-1.41.0-py3-none-any.whl (357 kB)
+2025-05-30T19:13:06.3409324Z #9 15.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 358.0/358.0 kB 306.2 MB/s eta 0:00:00
+2025-05-30T19:13:06.3410628Z #9 15.32 Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (50.0 MB)
+2025-05-30T19:13:06.6301937Z #9 15.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 MB 241.0 MB/s eta 0:00:00
+2025-05-30T19:13:06.6302919Z #9 15.53 Downloading propcache-0.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (232 kB)
+2025-05-30T19:13:06.6304083Z #9 15.54    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.5/232.5 kB 347.0 MB/s eta 0:00:00
+2025-05-30T19:13:06.6304732Z #9 15.54 Downloading PyJWT-2.10.1-py3-none-any.whl (22 kB)
+2025-05-30T19:13:06.6305394Z #9 15.54 Downloading pytest_mock-3.14.1-py3-none-any.whl (9.9 kB)
+2025-05-30T19:13:06.6306513Z #9 15.55 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-05-30T19:13:06.6307455Z #9 15.55    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 303.1 MB/s eta 0:00:00
+2025-05-30T19:13:06.6308193Z #9 15.55 Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+2025-05-30T19:13:06.6309152Z #9 15.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 351.8 MB/s eta 0:00:00
+2025-05-30T19:13:06.6310011Z #9 15.56 Downloading PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (762 kB)
+2025-05-30T19:13:06.6311351Z #9 15.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 763.0/763.0 kB 299.4 MB/s eta 0:00:00
+2025-05-30T19:13:06.6312029Z #9 15.57 Downloading rich-14.0.0-py3-none-any.whl (243 kB)
+2025-05-30T19:13:06.6312912Z #9 15.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.2/243.2 kB 336.1 MB/s eta 0:00:00
+2025-05-30T19:13:06.6313801Z #9 15.58 Downloading safetensors-0.5.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (471 kB)
+2025-05-30T19:13:06.6314876Z #9 15.58    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 471.6/471.6 kB 351.8 MB/s eta 0:00:00
+2025-05-30T19:13:06.6315495Z #9 15.59 Downloading semchunk-2.2.2-py3-none-any.whl (10 kB)
+2025-05-30T19:13:06.6316345Z #9 15.59 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2025-05-30T19:13:06.6317045Z #9 15.60 Downloading soupsieve-2.7-py3-none-any.whl (36 kB)
+2025-05-30T19:13:06.6317697Z #9 15.60 Downloading StrEnum-0.4.15-py3-none-any.whl (8.9 kB)
+2025-05-30T19:13:06.6318388Z #9 15.60 Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+2025-05-30T19:13:06.6319089Z #9 15.61 Downloading torch-2.7.0-cp311-cp311-manylinux_2_28_x86_64.whl (865.2 MB)
+2025-05-30T19:13:10.8529299Z #9 19.83    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 865.2/865.2 MB 187.5 MB/s eta 0:00:00
+2025-05-30T19:13:10.8530138Z #9 19.83 Downloading nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (393.1 MB)
+2025-05-30T19:13:11.9901210Z #9 20.98    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 393.1/393.1 MB 368.8 MB/s eta 0:00:00
+2025-05-30T19:13:11.9901949Z #9 20.99 Downloading nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.9 MB)
+2025-05-30T19:13:11.9902675Z #9 21.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.9/8.9 MB 311.8 MB/s eta 0:00:00
+2025-05-30T19:13:11.9903527Z #9 21.02 Downloading nvidia_cuda_nvrtc_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl (23.7 MB)
+2025-05-30T19:13:12.1547204Z #9 21.12    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 291.3 MB/s eta 0:00:00
+2025-05-30T19:13:12.1550959Z #9 21.12 Downloading nvidia_cuda_runtime_cu12-12.6.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (897 kB)
+2025-05-30T19:13:12.1552158Z #9 21.13    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 897.7/897.7 kB 310.1 MB/s eta 0:00:00
+2025-05-30T19:13:12.1552958Z #9 21.13 Downloading nvidia_cudnn_cu12-9.5.1.17-py3-none-manylinux_2_28_x86_64.whl (571.0 MB)
+2025-05-30T19:13:14.5638713Z #9 23.54    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 571.0/571.0 MB 278.7 MB/s eta 0:00:00
+2025-05-30T19:13:14.5639437Z #9 23.54 Downloading nvidia_cufft_cu12-11.3.0.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (200.2 MB)
+2025-05-30T19:13:15.4773323Z #9 24.44    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.2/200.2 MB 264.2 MB/s eta 0:00:00
+2025-05-30T19:13:15.4773981Z #9 24.44 Downloading nvidia_cufile_cu12-1.11.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.1 MB)
+2025-05-30T19:13:15.4774612Z #9 24.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 299.0 MB/s eta 0:00:00
+2025-05-30T19:13:15.4775417Z #9 24.45 Downloading nvidia_curand_cu12-10.3.7.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (56.3 MB)
+2025-05-30T19:13:15.6849432Z #9 24.66    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 314.9 MB/s eta 0:00:00
+2025-05-30T19:13:15.6850180Z #9 24.66 Downloading nvidia_cusolver_cu12-11.7.1.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (158.2 MB)
+2025-05-30T19:13:16.2907993Z #9 25.26    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.2/158.2 MB 298.6 MB/s eta 0:00:00
+2025-05-30T19:13:16.2908688Z #9 25.27 Downloading nvidia_cusparse_cu12-12.5.4.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (216.6 MB)
+2025-05-30T19:13:17.0701046Z #9 26.04    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.6/216.6 MB 313.5 MB/s eta 0:00:00
+2025-05-30T19:13:17.0702004Z #9 26.05 Downloading nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_x86_64.whl (156.8 MB)
+2025-05-30T19:13:17.7612566Z #9 26.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.8/156.8 MB 259.4 MB/s eta 0:00:00
+2025-05-30T19:13:17.7613700Z #9 26.74 Downloading nvidia_nccl_cu12-2.26.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (201.3 MB)
+2025-05-30T19:13:18.5989140Z #9 27.62    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 201.3/201.3 MB 240.9 MB/s eta 0:00:00
+2025-05-30T19:13:18.5990355Z #9 27.63 Downloading nvidia_nvjitlink_cu12-12.6.85-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (19.7 MB)
+2025-05-30T19:13:18.5991453Z #9 27.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.7/19.7 MB 267.8 MB/s eta 0:00:00
+2025-05-30T19:13:18.5991987Z #9 27.72 Downloading nvidia_nvtx_cu12-12.6.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89 kB)
+2025-05-30T19:13:18.5992585Z #9 27.72    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.3/89.3 kB 273.3 MB/s eta 0:00:00
+2025-05-30T19:13:18.5993356Z #9 27.73 Downloading triton-3.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (156.5 MB)
+2025-05-30T19:13:19.2729869Z #9 28.30    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.5/156.5 MB 317.5 MB/s eta 0:00:00
+2025-05-30T19:13:19.2730691Z #9 28.31 Downloading torchvision-0.22.0-cp311-cp311-manylinux_2_28_x86_64.whl (7.4 MB)
+2025-05-30T19:13:19.2731627Z #9 28.34    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.4/7.4 MB 252.0 MB/s eta 0:00:00
+2025-05-30T19:13:19.2732288Z #9 28.34 Downloading transformers-4.52.4-py3-none-any.whl (10.5 MB)
+2025-05-30T19:13:19.2733083Z #9 28.37    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 345.4 MB/s eta 0:00:00
+2025-05-30T19:13:19.2733731Z #9 28.38 Downloading typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+2025-05-30T19:13:19.2734381Z #9 28.38 Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+2025-05-30T19:13:19.2735010Z #9 28.38    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.8/347.8 kB 318.1 MB/s eta 0:00:00
+2025-05-30T19:13:19.2735490Z #9 28.39 Downloading urllib3-2.4.0-py3-none-any.whl (128 kB)
+2025-05-30T19:13:19.2736356Z #9 28.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.7/128.7 kB 298.1 MB/s eta 0:00:00
+2025-05-30T19:13:19.2737470Z #9 28.39 Downloading websockets-14.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (169 kB)
+2025-05-30T19:13:19.2738319Z #9 28.40    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 169.9/169.9 kB 248.3 MB/s eta 0:00:00
+2025-05-30T19:13:19.2738729Z #9 28.40 Downloading XlsxWriter-3.2.3-py3-none-any.whl (169 kB)
+2025-05-30T19:13:19.3916493Z #9 28.40    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 169.4/169.4 kB 247.5 MB/s eta 0:00:00
+2025-05-30T19:13:19.3917379Z #9 28.41 Downloading yarl-1.20.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (358 kB)
+2025-05-30T19:13:19.3918357Z #9 28.41    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 358.1/358.1 kB 328.2 MB/s eta 0:00:00
+2025-05-30T19:13:19.3918966Z #9 28.41 Downloading anyio-4.9.0-py3-none-any.whl (100 kB)
+2025-05-30T19:13:19.3919785Z #9 28.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.9/100.9 kB 273.4 MB/s eta 0:00:00
+2025-05-30T19:13:19.3920402Z #9 28.42 Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+2025-05-30T19:13:19.3921055Z #9 28.42 Downloading filelock-3.18.0-py3-none-any.whl (16 kB)
+2025-05-30T19:13:19.3921710Z #9 28.43 Downloading ninja-1.11.1.4-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (422 kB)
+2025-05-30T19:13:19.3922335Z #9 28.43    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 422.8/422.8 kB 301.2 MB/s eta 0:00:00
+2025-05-30T19:13:19.3922890Z #9 28.44 Downloading pyclipper-1.3.0.post6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (969 kB)
+2025-05-30T19:13:19.3923508Z #9 28.44    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 969.6/969.6 kB 303.3 MB/s eta 0:00:00
+2025-05-30T19:13:19.3924013Z #9 28.45 Downloading python_bidi-0.6.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (292 kB)
+2025-05-30T19:13:19.3924616Z #9 28.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 292.9/292.9 kB 316.1 MB/s eta 0:00:00
+2025-05-30T19:13:19.3925377Z #9 28.46 Downloading scikit_image-0.25.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.8 MB)
+2025-05-30T19:13:19.4935442Z #9 28.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.8/14.8 MB 238.3 MB/s eta 0:00:00
+2025-05-30T19:13:19.4936511Z #9 28.52 Downloading shapely-2.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+2025-05-30T19:13:19.4937492Z #9 28.54    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 295.4 MB/s eta 0:00:00
+2025-05-30T19:13:19.4938053Z #9 28.54 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2025-05-30T19:13:19.4938562Z #9 28.54 Downloading h2-4.2.0-py3-none-any.whl (60 kB)
+2025-05-30T19:13:19.4939033Z #9 28.54    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 217.8 MB/s eta 0:00:00
+2025-05-30T19:13:19.4939550Z #9 28.55 Downloading imageio-2.37.0-py3-none-any.whl (315 kB)
+2025-05-30T19:13:19.4940140Z #9 28.55    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 315.8/315.8 kB 307.1 MB/s eta 0:00:00
+2025-05-30T19:13:19.4940620Z #9 28.56 Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+2025-05-30T19:13:19.4941197Z #9 28.56 Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
+2025-05-30T19:13:19.4941839Z #9 28.56 Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-05-30T19:13:19.4942339Z #9 28.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 233.3 MB/s eta 0:00:00
+2025-05-30T19:13:19.4942993Z #9 28.57 Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+2025-05-30T19:13:19.4943515Z #9 28.57 Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+2025-05-30T19:13:19.4943968Z #9 28.58    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 281.6 MB/s eta 0:00:00
+2025-05-30T19:13:19.4944339Z #9 28.58 Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+2025-05-30T19:13:19.4944908Z #9 28.59    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 294.5 MB/s eta 0:00:00
+2025-05-30T19:13:19.4945282Z #9 28.59 Downloading pytest-8.3.5-py3-none-any.whl (343 kB)
+2025-05-30T19:13:19.4946022Z #9 28.60    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.6/343.6 kB 332.1 MB/s eta 0:00:00
+2025-05-30T19:13:19.4946427Z #9 28.60 Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+2025-05-30T19:13:19.4946938Z #9 28.60 Downloading rpds_py-0.25.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (386 kB)
+2025-05-30T19:13:19.4947489Z #9 28.61    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 387.0/387.0 kB 308.9 MB/s eta 0:00:00
+2025-05-30T19:13:19.4947830Z #9 28.61 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-05-30T19:13:19.4948171Z #9 28.61 Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+2025-05-30T19:13:19.4948521Z #9 28.62 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-05-30T19:13:19.4948991Z #9 28.62 Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2025-05-30T19:13:19.7345908Z #9 28.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 300.6 MB/s eta 0:00:00
+2025-05-30T19:13:19.7347759Z #9 28.65 Downloading tifffile-2025.5.26-py3-none-any.whl (230 kB)
+2025-05-30T19:13:19.7348654Z #9 28.65    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 230.3/230.3 kB 185.2 MB/s eta 0:00:00
+2025-05-30T19:13:19.7349488Z #9 28.66 Downloading tokenizers-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+2025-05-30T19:13:19.7350450Z #9 28.67    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 294.2 MB/s eta 0:00:00
+2025-05-30T19:13:19.7351021Z #9 28.67 Downloading hpack-4.1.0-py3-none-any.whl (34 kB)
+2025-05-30T19:13:19.7351589Z #9 28.68 Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+2025-05-30T19:13:19.7352179Z #9 28.68 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-05-30T19:13:19.7352727Z #9 28.68 Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2025-05-30T19:13:19.7353434Z #9 28.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 291.3 MB/s eta 0:00:00
+2025-05-30T19:13:19.7354055Z #9 28.69 Downloading multiprocess-0.70.18-py311-none-any.whl (144 kB)
+2025-05-30T19:13:19.7354856Z #9 28.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.5/144.5 kB 279.4 MB/s eta 0:00:00
+2025-05-30T19:13:19.7355433Z #9 28.70 Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+2025-05-30T19:13:19.7356197Z #9 28.70 Downloading mpire-2.10.2-py3-none-any.whl (272 kB)
+2025-05-30T19:13:19.7357013Z #9 28.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 272.8/272.8 kB 330.8 MB/s eta 0:00:00
+2025-05-30T19:13:19.7357558Z #9 28.71 Downloading dill-0.4.0-py3-none-any.whl (119 kB)
+2025-05-30T19:13:19.7358237Z #9 28.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.7/119.7 kB 309.7 MB/s eta 0:00:00
+2025-05-30T19:13:22.8673629Z #9 31.99 Building wheels for collected packages: pylatexenc
+2025-05-30T19:13:23.0186035Z #9 32.00   Building wheel for pylatexenc (setup.py): started
+2025-05-30T19:13:23.2086205Z #9 32.34   Building wheel for pylatexenc (setup.py): finished with status 'done'
+2025-05-30T19:13:23.3623700Z #9 32.34   Created wheel for pylatexenc: filename=pylatexenc-2.10-py3-none-any.whl size=136818 sha256=816dbf5e69313a9b975198f6deeadb9919d4e53fc8952c216e4e9068342f5112
+2025-05-30T19:13:23.3625525Z #9 32.34   Stored in directory: /tmp/pip-ephem-wheel-cache-iqwucoer/wheels/b1/7a/33/9fdd892f784ed4afda62b685ae3703adf4c91aa0f524c28f03
+2025-05-30T19:13:23.3627344Z #9 32.34 Successfully built pylatexenc
+2025-05-30T19:13:24.3131351Z #9 33.44 Installing collected packages: strenum, pytz, python-bidi, pylatexenc, pyclipper, nvidia-cusparselt-cu12, mpmath, filetype, XlsxWriter, websockets, watchdog, urllib3, tzdata, typing-extensions, triton, tqdm, tornado, toml, tenacity, tabulate, sympy, soupsieve, sniffio, smmap, six, shellingham, safetensors, rtree, rpds-py, regex, pyyaml, python-dotenv, pypdfium2, PyMuPDF, pyjwt, pygments, pyarrow, psycopg2-binary, protobuf, propcache, pluggy, pillow, packaging, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufile-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, ninja, networkx, narwhals, multidict, mdurl, MarkupSafe, marko, lxml, latex2mathml, jsonref, iniconfig, idna, hyperframe, hpack, hf-xet, h11, fsspec, frozenlist, filelock, et-xmlfile, dill, click, charset-normalizer, certifi, cachetools, blinker, attrs, annotated-types, aiohappyeyeballs, yarl, typing-inspection, tifffile, Shapely, scipy, requests, referencing, python-pptx, python-docx, python-dateutil, pytest, pydantic-core, openpyxl, opencv-python-headless, nvidia-cusparse-cu12, nvidia-cufft-cu12, nvidia-cudnn-cu12, multiprocess, mpire, markdown-it-py, lazy-loader, jsonlines, jinja2, imageio, httpcore, h2, gitdb, deprecation, beautifulsoup4, anyio, aiosignal, tiktoken, scikit-image, rich, pytest-mock, pydeck, pydantic, pandas, nvidia-cusolver-cu12, jsonschema-specifications, huggingface_hub, httpx, gitpython, aiohttp, typer, torch, tokenizers, semchunk, realtime, pydantic-settings, openai, jsonschema, transformers, torchvision, supafunc, storage3, postgrest, gotrue, docling-core, altair, supabase, streamlit, easyocr, docling-parse, docling-ibm-models, docling
+2025-05-30T19:14:34.6320239Z #9 103.8 Successfully installed MarkupSafe-3.0.2 PyMuPDF-1.26.0 Shapely-2.1.1 XlsxWriter-3.2.3 aiohappyeyeballs-2.6.1 aiohttp-3.12.4 aiosignal-1.3.2 altair-5.5.0 annotated-types-0.7.0 anyio-4.9.0 attrs-25.3.0 beautifulsoup4-4.13.4 blinker-1.9.0 cachetools-5.5.2 certifi-2025.4.26 charset-normalizer-3.4.2 click-8.1.8 deprecation-2.1.0 dill-0.4.0 docling-2.34.0 docling-core-2.32.0 docling-ibm-models-3.4.3 docling-parse-4.0.1 easyocr-1.7.2 et-xmlfile-2.0.0 filelock-3.18.0 filetype-1.2.0 frozenlist-1.6.0 fsspec-2025.5.1 gitdb-4.0.12 gitpython-3.1.44 gotrue-2.12.0 h11-0.16.0 h2-4.2.0 hf-xet-1.1.2 hpack-4.1.0 httpcore-1.0.9 httpx-0.28.1 huggingface_hub-0.32.3 hyperframe-6.1.0 idna-3.10 imageio-2.37.0 iniconfig-2.1.0 jinja2-3.1.6 jsonlines-3.1.0 jsonref-1.1.0 jsonschema-4.24.0 jsonschema-specifications-2025.4.1 latex2mathml-3.78.0 lazy-loader-0.4 lxml-5.4.0 markdown-it-py-3.0.0 marko-2.1.3 mdurl-0.1.2 mpire-2.10.2 mpmath-1.3.0 multidict-6.4.4 multiprocess-0.70.18 narwhals-1.41.0 networkx-3.5 ninja-1.11.1.4 numpy-2.2.6 nvidia-cublas-cu12-12.6.4.1 nvidia-cuda-cupti-cu12-12.6.80 nvidia-cuda-nvrtc-cu12-12.6.77 nvidia-cuda-runtime-cu12-12.6.77 nvidia-cudnn-cu12-9.5.1.17 nvidia-cufft-cu12-11.3.0.4 nvidia-cufile-cu12-1.11.1.6 nvidia-curand-cu12-10.3.7.77 nvidia-cusolver-cu12-11.7.1.2 nvidia-cusparse-cu12-12.5.4.2 nvidia-cusparselt-cu12-0.6.3 nvidia-nccl-cu12-2.26.2 nvidia-nvjitlink-cu12-12.6.85 nvidia-nvtx-cu12-12.6.77 openai-0.28.0 opencv-python-headless-4.11.0.86 openpyxl-3.1.5 packaging-24.2 pandas-2.2.3 pillow-11.2.1 pluggy-1.6.0 postgrest-1.0.2 propcache-0.3.1 protobuf-6.31.1 psycopg2-binary-2.9.10 pyarrow-20.0.0 pyclipper-1.3.0.post6 pydantic-2.11.5 pydantic-core-2.33.2 pydantic-settings-2.9.1 pydeck-0.9.1 pygments-2.19.1 pyjwt-2.10.1 pylatexenc-2.10 pypdfium2-4.30.1 pytest-8.3.5 pytest-mock-3.14.1 python-bidi-0.6.6 python-dateutil-2.9.0.post0 python-docx-1.1.2 python-dotenv-1.1.0 python-pptx-1.0.2 pytz-2025.2 pyyaml-6.0.2 realtime-2.4.3 referencing-0.36.2 regex-2024.11.6 requests-2.32.3 rich-14.0.0 rpds-py-0.25.1 rtree-1.4.0 safetensors-0.5.3 scikit-image-0.25.2 scipy-1.15.3 semchunk-2.2.2 shellingham-1.5.4 six-1.17.0 smmap-5.0.2 sniffio-1.3.1 soupsieve-2.7 storage3-0.11.3 streamlit-1.45.1 strenum-0.4.15 supabase-2.15.2 supafunc-0.9.4 sympy-1.14.0 tabulate-0.9.0 tenacity-9.1.2 tifffile-2025.5.26 tiktoken-0.9.0 tokenizers-0.21.1 toml-0.10.2 torch-2.7.0 torchvision-0.22.0 tornado-6.5.1 tqdm-4.67.1 transformers-4.52.4 triton-3.3.0 typer-0.15.4 typing-extensions-4.13.2 typing-inspection-0.4.1 tzdata-2025.2 urllib3-2.4.0 watchdog-6.0.0 websockets-14.2 yarl-1.20.0
+2025-05-30T19:14:34.8754427Z #9 103.8 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2025-05-30T19:14:34.8756254Z #9 103.9 
+2025-05-30T19:14:34.8766093Z #9 103.9 [notice] A new release of pip is available: 24.0 -> 25.1.1
+2025-05-30T19:14:34.8767100Z #9 103.9 [notice] To update, run: pip install --upgrade pip
+2025-05-30T19:14:39.8832424Z #9 DONE 109.0s
+2025-05-30T19:14:40.0359627Z 
+2025-05-30T19:14:40.0359906Z #10 [5/5] COPY . .
+2025-05-30T19:14:40.2656573Z #10 DONE 0.4s
+2025-05-30T19:14:40.4177465Z 
+2025-05-30T19:14:40.4177968Z #11 exporting to image
+2025-05-30T19:14:40.4178359Z #11 exporting layers
+2025-05-30T19:17:44.0851786Z #11 exporting layers 183.8s done
+2025-05-30T19:17:44.2338849Z #11 exporting manifest sha256:676773b03e6066c485e41ad339767adf27a354971517498f9d1a2c00fe413f2b done
+2025-05-30T19:17:44.2339989Z #11 exporting config sha256:89ef2bbe09bd7e60209a1d47c6cc1e9a16657e7856c09abf88ebf1e3b4fdfe58 done
+2025-05-30T19:17:44.2341135Z #11 exporting attestation manifest sha256:1f43e66466d0ec7f0c9bc3d38aee62fe2c92d9b10038e132012956633a2471a9 done
+2025-05-30T19:17:44.2342374Z #11 exporting manifest list sha256:2de6e13dfff8607e2c35adcba208936b4659da2e363658c01a9d4330318fcb71 done
+2025-05-30T19:17:44.2343141Z #11 pushing layers
+2025-05-30T19:17:44.2343499Z #11 ...
+2025-05-30T19:17:44.2343658Z 
+2025-05-30T19:17:44.2344030Z #12 [auth] cimt-registry/cimt-chat:pull,push token for registry.digitalocean.com
+2025-05-30T19:17:44.3847162Z #12 DONE 0.0s
+2025-05-30T19:17:44.3847465Z 
+2025-05-30T19:17:44.3847646Z #11 exporting to image
+2025-05-30T19:17:48.2499602Z #11 pushing layers 4.1s done
+2025-05-30T19:17:48.2507198Z #11 ERROR: failed to push ***/cimt-chat:latest: failed to copy: unexpected status from PUT request to https://registry.digitalocean.com/v2/cimt-registry/cimt-chat/blobs/uploads/ce6797e7-adc7-4ffe-a106-215a87419447?_state=vDvC71HnCI8B_62ggNQPM2IHH0vOg2WLuB2CjS4OOvd7Ik5hbWUiOiJjaW10LXJlZ2lzdHJ5L2NpbXQtY2hhdCIsIlVVSUQiOiJjZTY3OTdlNy1hZGM3LTRmZmUtYTEwNi0yMTVhODc0MTk0NDciLCJPZmZzZXQiOjAsIlN0YXJ0ZWRBdCI6IjIwMjUtMDUtMzBUMTk6MTc6NDUuMDI3NDk1MloifQ%3D%3D&digest=sha256%3Af941867a99a0c598c498628d6c56e56c330fc8aabadefa2cc6cec1a51ba371f5: 403 Forbidden
+2025-05-30T19:17:48.2758084Z ------
+2025-05-30T19:17:48.2759629Z  > exporting to image:
+2025-05-30T19:17:48.2760149Z ------
+2025-05-30T19:17:48.2773653Z ERROR: failed to solve: failed to push ***/cimt-chat:latest: failed to copy: unexpected status from PUT request to https://registry.digitalocean.com/v2/cimt-registry/cimt-chat/blobs/uploads/ce6797e7-adc7-4ffe-a106-215a87419447?_state=vDvC71HnCI8B_62ggNQPM2IHH0vOg2WLuB2CjS4OOvd7Ik5hbWUiOiJjaW10LXJlZ2lzdHJ5L2NpbXQtY2hhdCIsIlVVSUQiOiJjZTY3OTdlNy1hZGM3LTRmZmUtYTEwNi0yMTVhODc0MTk0NDciLCJPZmZzZXQiOjAsIlN0YXJ0ZWRBdCI6IjIwMjUtMDUtMzBUMTk6MTc6NDUuMDI3NDk1MloifQ%3D%3D&digest=sha256%3Af941867a99a0c598c498628d6c56e56c330fc8aabadefa2cc6cec1a51ba371f5: 403 Forbidden
+2025-05-30T19:17:48.3277958Z ##[error]buildx failed with: ERROR: failed to solve: failed to push ***/cimt-chat:latest: failed to copy: unexpected status from PUT request to https://registry.digitalocean.com/v2/cimt-registry/cimt-chat/blobs/uploads/ce6797e7-adc7-4ffe-a106-215a87419447?_state=vDvC71HnCI8B_62ggNQPM2IHH0vOg2WLuB2CjS4OOvd7Ik5hbWUiOiJjaW10LXJlZ2lzdHJ5L2NpbXQtY2hhdCIsIlVVSUQiOiJjZTY3OTdlNy1hZGM3LTRmZmUtYTEwNi0yMTVhODc0MTk0NDciLCJPZmZzZXQiOjAsIlN0YXJ0ZWRBdCI6IjIwMjUtMDUtMzBUMTk6MTc6NDUuMDI3NDk1MloifQ%3D%3D&digest=sha256%3Af941867a99a0c598c498628d6c56e56c330fc8aabadefa2cc6cec1a51ba371f5: 403 Forbidden
+2025-05-30T19:17:48.3397900Z Post job cleanup.
+2025-05-30T19:17:48.5610588Z ##[group]Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-tMWOjt
+2025-05-30T19:17:48.5620628Z ##[endgroup]
+2025-05-30T19:17:48.5621220Z ##[group]Post cache
+2025-05-30T19:17:48.5622564Z State not set
+2025-05-30T19:17:48.5624027Z ##[endgroup]
+2025-05-30T19:17:48.5734365Z Post job cleanup.
+2025-05-30T19:17:48.8680549Z [command]/usr/bin/docker logout ***
+2025-05-30T19:17:48.8837521Z Removing login credentials for registry.digitalocean.com
+2025-05-30T19:17:48.8872340Z ##[group]Post cache
+2025-05-30T19:17:48.8873959Z State not set
+2025-05-30T19:17:48.8875152Z ##[endgroup]
+2025-05-30T19:17:48.9003221Z Post job cleanup.
+2025-05-30T19:17:49.1488049Z ##[group]Removing builder
+2025-05-30T19:17:49.2511246Z [command]/usr/bin/docker buildx rm builder-9fa6758c-edfb-41f8-b15b-836edfe7b000
+2025-05-30T19:17:52.3633148Z builder-9fa6758c-edfb-41f8-b15b-836edfe7b000 removed
+2025-05-30T19:17:52.3673225Z ##[endgroup]
+2025-05-30T19:17:52.3674869Z ##[group]Cleaning up certificates
+2025-05-30T19:17:52.3682165Z ##[endgroup]
+2025-05-30T19:17:52.3682770Z ##[group]Post cache
+2025-05-30T19:17:52.3684791Z State not set
+2025-05-30T19:17:52.3685762Z ##[endgroup]
+2025-05-30T19:17:52.3827790Z Post job cleanup.
+2025-05-30T19:17:52.4550539Z [command]/usr/bin/git version
+2025-05-30T19:17:52.4585404Z git version 2.49.0
+2025-05-30T19:17:52.4628855Z Temporarily overriding HOME='/home/runner/work/_temp/b7fd348a-58bd-4074-8dea-806e69a543ba' before making global git config changes
+2025-05-30T19:17:52.4629824Z Adding repository directory to the temporary git global config as a safe directory
+2025-05-30T19:17:52.4632809Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cimt-v1/cimt-v1
+2025-05-30T19:17:52.4666111Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-05-30T19:17:52.4696356Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-05-30T19:17:52.4916291Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-05-30T19:17:52.4935185Z http.https://github.com/.extraheader
+2025-05-30T19:17:52.4946024Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-05-30T19:17:52.4974691Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-05-30T19:17:52.5309574Z Cleaning up orphan processes
